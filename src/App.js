@@ -16,8 +16,8 @@ function App() {
                <div className='text-xl flex items-end bg-purple flex-end ml-40 rounded-xl'>Profile</div>
                </div>
       </nav>
-      <div className='w-full h-14 bg-white p-3 flex flex-wrap gap-10'>
-           <input type="text" className="border-[1px] border-lightgray w-72 h-10 ml-16 rounded-lg"></input>
+      <div className='w-full h-16 bg-white p-3 flex flex-wrap gap-10'>
+           <input type="text" placeholder="Search address"  className="border-[1px] border-lightgray w-96 h-10 ml-16 rounded-lg p-2"></input>
            <div className="border-[1px] rounded-lg text-center pt-1 pl-1 pr-1 border-lightgray text-gray">Zone Picker <span className="border-[1px] border-lightgray">filter</span></div>
            <div className="border-[1px] rounded-lg text-center pt-1 pl-1 pr-1 border-lightgray text-gray">Plu Filter <span className="border-[1px] border-lightgray">filter</span></div>
            <div className="border-[1px] rounded-lg text-center pt-1 pl-1 pr-1 border-lightgray text-gray">Propect <span className="border-[1px] border-lightgray">filter</span></div>
@@ -26,10 +26,10 @@ function App() {
       </div>
       <div className='h-screen bg-purple font-bold items-center w-full'>
         <h1>Map Div</h1>
-        <div className='bg-white w-24 border-2 top-9 z-[300] h-60 ml-16 mt-36'><p>legend</p></div>
+        <div className='bg-white w-32 border-[1px] top-9 z-[300] h-60 ml-16 mt-36 border-lightgray rounded-md text-center'><p>legend</p></div>
       </div>
-      <div className=''>
-          popup
+      <div className=' bg-lightgray w-52 h-4/5'>
+         
       </div>
      
       {/* <h1 className="text-3xl font-bold">
