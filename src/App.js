@@ -29,7 +29,7 @@ function App() {
         <div className='bg-white w-32 border-[1px] top-9 z-[300] h-60 ml-16 mt-36 border-lightgray rounded-md text-center'><p>legend</p></div>
       </div>
       <div className=' bg-lightgray w-52 h-4/5'>
-         
+
       </div>
      
       {/* <h1 className="text-3xl font-bold">
