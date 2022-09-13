@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        adelia: ["ADELIA", "cursive"],
+      },
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -17,7 +22,8 @@ module.exports = {
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
       'gray' : '#808080',
-      'lightgray' : '#D3D3D3'
+      'lightgray' : '#D3D3D3',
+      'zblue' : '#4169e1'
     },
   },
   plugins: [],
