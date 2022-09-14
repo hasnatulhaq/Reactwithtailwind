@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         adelia: ["ADELIA", "cursive"],
+        montserrat: ['Montserrat', "sans-serif"],
       },
     },
     colors: {
@@ -23,7 +24,8 @@ module.exports = {
       'bermuda': '#78dcca',
       'gray' : '#808080',
       'lightgray' : '#D3D3D3',
-      'zblue' : '#4169e1'
+      'zblue' : '#4169e1',
+      'zgray' : '#5A5A5A'
     },
   },
   plugins: [],
