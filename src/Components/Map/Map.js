@@ -17,7 +17,6 @@ function Map(){
         isDragging: false,
       });
 
-
     return(
         <>
           <ReactMapGl
