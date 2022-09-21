@@ -20,8 +20,8 @@ function App() {
        <Navbar/>
     {/* search menu  */}
       <div className='w-full h-16 bg-white p-3 flex gap-10'>
-           <div className='border-[1px] border-lightgray w-1/4 h-10 ml-16 rounded-lg p-2 flex flex-row gap-2'>
-            <div>
+           <div className='border-[1px] border-lightgray w-2/6 h-10 ml-16 rounded-lg p-2 flex flex-row gap-3'>
+            <div className='px-5'>
             <FaBookmark style={style}/>
             </div>
             <span className='border-[1px] w-[1px] border-lightgray'></span>
@@ -42,10 +42,10 @@ function App() {
            <Button text={"Listings"} icon={<FaMapPin style={mappin}/>}/>
            </div>
       </div>
-      <div className='flex bg-metal h-[30%]'>
-      <div className='font-bold items-center w-full'>
+     
+      <div className='items-center w-full'>
          <MapsGoogle/>
-        <div className='bg-white w-40 border-[1px] z-[300] h-60 ml-16 mt-[500px] border-lightgray rounded-md text-center bottom-5 absolute overflow-auto'>
+        <div className='bg-white w-52 border-[1px] z-[300] h-80 ml-16 mt-[500px] border-lightgray rounded-md text-center bottom-5 absolute overflow-auto'>
            <div className='border-b-[1px] border-lightgray font-normal flex flex-row justify-between'>
               <div>Legend</div> 
                <img src={Colorpicker} alt="color picker" className='rounded border-[1px] border-zblue w-5'/>
@@ -72,7 +72,6 @@ function App() {
           </div>
       </div>
       <RightSidebar/>
-      </div>
     </>
   );
 }

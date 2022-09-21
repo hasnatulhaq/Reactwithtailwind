@@ -23,7 +23,7 @@ module.exports = {
         '5xl': '3rem',
         '6xl': '4rem',
         '7xl': '5rem',
-        'zsm': '13px'
+        'zsm': '12px'
       }
     },
     colors: {
@@ -37,10 +37,11 @@ module.exports = {
       'silver': '#ecebff',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
-      'gray' : '#808080',
+      'gray' : '#8c8c8c',
       'lightgray' : '#D3D3D3',
-      'zblue' : '#4169e1',
-      'zgray' : '#5A5A5A'
+      'zblue' : '#4257a7',
+      'zgray' : '#5A5A5A',
+      'zlblue' : "#435ec8f2"
     },
   },
   plugins: [],

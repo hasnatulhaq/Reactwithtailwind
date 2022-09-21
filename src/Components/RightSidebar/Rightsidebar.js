@@ -12,22 +12,22 @@ function RightSidebar(){
 
     return(
         <>
-           <div className=' bg-white w-[35%] z-auto h-[850px]'>
+           <div className=' bg-white w-[30%] h-[86%] z-auto absolute right-0 bottom-0'>
           <div className='flex flex-row border-b-[1px] border-lightgray justify-between p-2'>
             <span className='text-purple'><FaLink/></span>
             <span className='text-2xl text-gray font-bold'>&times;</span>
           </div>
-          <div className='flex flex-row justify-between border-b-[1px] border-lightgray'>
+          <div className='flex justify-between border-b-[1px] border-lightgray px-4'>
             <h1 className='text-xl text-zblue h-20 p-2'>Los Angeles,CA,USA</h1>
             <span className='mt-5 mr-5'><FaBookmark style={style} /></span>
           </div>
-          <div className='flex flex-row justify-around mt-3 border-b-[1px] border-lightgray p-3'>
+          <div className='flex w-full border-b-[1px] border-lightgray p-4'>
             <Rightbartab text={"Zone Data"}/>
             <Rightbartab text={"Permitted use"}/>
             <Rightbartab text={"Controls"}/>
             <Rightbartab text={"Overlays"}/>
           </div>
-          <div className='h-[500px] overflow-auto p-5 border-b-[1px] border-lightgray'>
+          <div className='h-[500px] overflow-auto p-5'>
               <ul className='leading-10'>
                 <li>Zone Code</li>
                   <li className='text-gray'>C35</li>
@@ -41,10 +41,10 @@ function RightSidebar(){
                 </ul>   
               </ul>
           </div>
-          <div className='flex flex-wrap flex-row p-4 justify-around'>
+          <div className='flex p-4 gap-1 bottom-0 absolute w-full border-t-[1px] border-lightgray'>
               <Rightbarbtn text={"Get Report"} icon={<FaFileAlt style={btnstyle}/>}/>
               <Rightbarbtn text={"Order Report"} icon={<FaUndo style={btnstyle}/>}/>
-              <Rightbarbtn text={"CSV Download"} icon={<FaDownload style={btnstyle} className="basic-1/3"/>}/>
+              <Rightbarbtn text={"CSV Download"} icon={<FaDownload style={btnstyle}/>}/>
           </div>
       </div>
         </>
