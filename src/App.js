@@ -52,7 +52,7 @@ function App() {
             </div>
           {/* </div> */}
         {/* <img src={Colorpicker} alt="color picker" className='rounded border-[1px] border-zblue w-5 self-end absolute'/> */}
-           <div className='border-b-[1px] border-lightgray font-normal flex flex-row justify-center p-2 uppercase text-zsm font-medium'>
+           <div className='border-b-[1px] border-lightgray text-zgray flex flex-row justify-center p-2 uppercase text-zsm font-medium'>
               Zone Legend
            </div>
            <div className='text-left font-normal overflow-auto'>

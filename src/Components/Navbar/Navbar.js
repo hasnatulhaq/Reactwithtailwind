@@ -17,7 +17,7 @@ function Navbar(){
                </ul>
                </div>
                </div>
-               <div className='text-xl text-white flex bg-zgray flex-end rounded-full mr-auto text-center h-10 w-10'>H</div>    
+               <div className='text-white text-xl flex justify-center items-center bg-zgray rounded-full h-12 w-12'>H</div>    
         </nav>
         </>
     )
