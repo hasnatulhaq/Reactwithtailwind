@@ -19,12 +19,12 @@ function App() {
     {/* Top navbar */}
        <Navbar/>
     {/* search menu  */}
-      <div className='w-full h-16 bg-white p-3 flex gap-10'>
-           <div className='border-[1px] border-lightgray w-2/6 h-10 ml-16 rounded-lg p-2 flex flex-row gap-3'>
+      <div className='w-full h-16 bg-white p-3 flex gap-5'>
+           <div className='border-[1px] border-lightgray w-2/6 h-10 ml-16 rounded-lg p-2 flex flex-row gap-3 shadow-sm '>
             <div className='px-5'>
             <FaBookmark style={style}/>
             </div>
-            <span className='border-[1px] w-[1px] border-lightgray'></span>
+            <span className='border-l-[1px] border-lightgray'></span>
             <div>
             <Autocomplete
       // onLoad={(e)=>setAutocomplete(e)}
@@ -34,7 +34,7 @@ function App() {
       </Autocomplete>
             </div>
            </div>
-           <div className='flex flex-row gap-10'>
+           <div className='flex gap-4'>
            <Button text={"Zone Picker"} icon={<FaFilter style={filterstyle}/>}/>
            <Button text={"Plu Filter"} icon={<FaFilter style={filterstyle}/>}/>
            <Button text={"Prospect"} icon={<FaFilter style={filterstyle}/>}/>
@@ -45,12 +45,17 @@ function App() {
      
       <div className='items-center w-full'>
          <MapsGoogle/>
-        <div className='bg-white w-52 border-[1px] z-[300] h-80 ml-16 mt-[500px] border-lightgray rounded-md text-center bottom-5 absolute overflow-auto'>
-           <div className='border-b-[1px] border-lightgray font-normal flex flex-row justify-between'>
-              <div>Legend</div> 
-               <img src={Colorpicker} alt="color picker" className='rounded border-[1px] border-zblue w-5'/>
+        <div id="legend" className='bg-white w-52 border-[1px] z-[300] h-80 ml-16 mt-[500px] flex flex-col border-lightgray rounded-md text-center bottom-5 absolute '>
+          {/* <div className='border-[2px] rounded-full border-zblue w-8 h-8 absolute top-[-8px] right-[-8px] bg-purple'> */}
+            <div className='flex justify-center items-center border-zblue bg-white border-[1px] w-8 h-8 rounded-full self-end top-[-10px] right-[-10px] absolute'>
+          <img src={Colorpicker} alt="color picker" className='h-4'/>
+            </div>
+          {/* </div> */}
+        {/* <img src={Colorpicker} alt="color picker" className='rounded border-[1px] border-zblue w-5 self-end absolute'/> */}
+           <div className='border-b-[1px] border-lightgray font-normal flex flex-row justify-center p-2'>
+              <div>Zone Legend</div> 
            </div>
-           <div className='text-left font-normal'>
+           <div className='text-left font-normal overflow-auto'>
                <ul>
                    <li><div className='w-4 rounded h-2 bg-purple'></div>code</li>
                    <li className='flex flex-row'><span className='bg-gray rounded'></span><span>code</span></li>
