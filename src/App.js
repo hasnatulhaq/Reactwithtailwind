@@ -13,13 +13,14 @@ function App() {
 
   const style = { color: "lightgray", fontSize: "1.5em" }
   const filterstyle = { color : "lightgray"}
-  const mappin={color : "gray" , fontSize : "1.0em"}
+  // const mappin={color : "gray" , fontSize : ""}
+  const mappin={colo:"gray"}
   return (
     <>
     {/* Top navbar */}
        <Navbar/>
     {/* search menu  */}
-      <div className='w-full h-16 bg-white p-3 flex gap-5'>
+      <div className='w-full lg:h-16 bg-white p-3 flex gap-5 lg:flex-row md:flex-col sm:flex-col sm:h-24'>
            <div className='border-[1px] border-lightgray w-2/6 h-10 ml-16 rounded-lg p-2 flex flex-row gap-3 shadow-sm '>
             <div className='px-5'>
             <FaBookmark style={style}/>
@@ -34,7 +35,7 @@ function App() {
       </Autocomplete>
             </div>
            </div>
-           <div className='flex gap-4'>
+           <div className='flex gap-4 lg:flex-row md:flex-col items-end'>
            <Button text={"Zone Picker"} icon={<FaFilter style={filterstyle}/>}/>
            <Button text={"Plu Filter"} icon={<FaFilter style={filterstyle}/>}/>
            <Button text={"Prospect"} icon={<FaFilter style={filterstyle}/>}/>
@@ -56,22 +57,20 @@ function App() {
               Zone Legend
            </div>
            <div className='text-left font-normal overflow-auto'>
-               <ul>
-                   <li className='flex gap-2'><div className='w-4 rounded-full h-4 bg-purple'></div><div>code</div></li>
-                   <li className='flex flex-row'><span className='bg-gray rounded'></span><span>code</span></li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
-                   <li><span className='bg-gray rounded'></span>code</li>
+               <ul className='p-3'>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><h3>code</h3></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><div>code</div></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><div>code</div></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><h3>code</h3></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><div>code</div></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><div>code</div></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><h3>code</h3></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><div>code</div></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><div>code</div></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><h3>code</h3></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><div>code</div></li>
+                   <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><div>code</div></li>
+                
                </ul>
            </div>
           </div>

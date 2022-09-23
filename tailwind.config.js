@@ -24,7 +24,14 @@ module.exports = {
         '6xl': '4rem',
         '7xl': '5rem',
         'zsm': '12px'
-      }
+      },
+      screens: {
+        'sm': {'min': '640px', 'max': '767px'},
+        'tablet': '845px',
+        'mobile' : '500px',
+        'laptop': '1024px',
+        'desktop': '1280px',
+      },
     },
     colors: {
       transparent: 'transparent',

@@ -5,8 +5,8 @@
 function Dashboard(){
     return(
         <>
-            <div className="">
-
+            <div id="sidebar" className="">
+                 
             </div>
         </>
     )

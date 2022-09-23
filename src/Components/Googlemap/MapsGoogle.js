@@ -5,8 +5,8 @@ import axios from 'axios'
 
 
 const containerStyle = {
-    width: '100%',
-    height: '835px',
+    width: '100wh',
+    height: '85vh',
   };
 
 

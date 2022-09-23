@@ -12,7 +12,7 @@ function RightSidebar(){
 
     return(
         <>
-           <div className=' bg-white w-[30%] h-[86%] z-auto absolute right-0 bottom-0'>
+           <div className=' bg-white w-[30%] h-[86%] z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden'>
           <div className='flex flex-row border-b-[1px] border-lightgray justify-between p-2'>
             <span className='text-purple'><FaLink/></span>
             <span className='text-2xl text-gray font-bold'>&times;</span>
@@ -41,7 +41,7 @@ function RightSidebar(){
                 </ul>   
               </ul>
           </div>
-          <div className='flex p-4 gap-1 bottom-0 absolute w-full border-t-[1px] border-lightgray'>
+          <div className='flex p-4 gap-1 bottom-0 absolute w-full border-t-[1px] border-lightgray bg-white'>
               <Rightbarbtn text={"Get Report"} icon={<FaFileAlt style={btnstyle}/>}/>
               <Rightbarbtn text={"Order Report"} icon={<FaUndo style={btnstyle}/>}/>
               <Rightbarbtn text={"CSV Download"} icon={<FaDownload style={btnstyle}/>}/>
