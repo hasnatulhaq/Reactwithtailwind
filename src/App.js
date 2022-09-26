@@ -43,7 +43,7 @@ function App() {
            <Button text={"Listings"} icon={<FaMapPin style={mappin}/>}/>
            </div>
       </div>
-     
+      
       <div className='items-center w-full'>
          <MapsGoogle/>
         <div id="legend" className='bg-white w-52 border-[1px] z-[300] h-80 ml-16 mt-[500px] flex flex-col border-lightgray rounded-md text-center bottom-5 absolute '>
@@ -70,7 +70,6 @@ function App() {
                    <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><h3>code</h3></li>
                    <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><div>code</div></li>
                    <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><div>code</div></li>
-                
                </ul>
            </div>
           </div>

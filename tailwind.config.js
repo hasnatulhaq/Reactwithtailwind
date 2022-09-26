@@ -26,11 +26,15 @@ module.exports = {
         'zsm': '12px'
       },
       screens: {
-        'sm': {'min': '640px', 'max': '767px'},
+        
         'tablet': '845px',
         'mobile' : '500px',
+        'small': {'min': '640px', 'max': '767px'},
         'laptop': '1024px',
+        // => @media (min-width: 1024px) { ... }
+        
         'desktop': '1280px',
+        // => @media (min-width: 1280px) { ... }
       },
     },
     colors: {

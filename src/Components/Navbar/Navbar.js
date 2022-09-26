@@ -5,8 +5,8 @@ import logo  from '../../images/zoneomics_full.png'
 function Navbar(){
     return(
         <>
-         <nav className=' bg-white bottom-2 border-b-[1px] h-20 pt-6 p-5 border-lightgray flex flex-row sm:bg-purple'>
-               <div className='flex w-full flex-row  ml-16 mr-16 '>
+         <nav className=' bg-white bottom-2 border-b-[1px] h-20 pt-6 p-5 border-lightgray flex flex-row small:bg-metal'>
+               <div className='flex w-full flex-row ml-14 mr-16 '>
                <img src={logo} alt="logo rezone" className="text-xl h-[40px] mb-5"/><sup className='text-purple border-[1px] text-zsm p-3 h-5 rounded'>Pro</sup>
                <div className='mt-3'>
                <ul className="flex space-x-14 text-gray ml-14 text-sm font-medium">

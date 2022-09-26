@@ -11,9 +11,8 @@ function RightSidebar(){
     const btnstyle ={ fontSize: "1.0rem"}
 
     return(
-        <>
-           <div className=' bg-white w-[30%] h-[86%] z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden'>
-          <div className='flex flex-row border-b-[1px] border-lightgray justify-between p-2'>
+          <div className=' bg-white w-[30%] h-[86%] z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden'>
+          <div className='flex flex-row border-b-[1px] border-lightgray justify-between items-center p-3'>
             <span className='text-purple'><FaLink/></span>
             <span className='text-2xl text-gray font-bold'>&times;</span>
           </div>
@@ -28,7 +27,7 @@ function RightSidebar(){
             <Rightbartab text={"Overlays"}/>
           </div>
           <div className='h-[500px] overflow-auto p-5'>
-              <ul className='leading-10'>
+              <ul className='leading-10 uppercase font-medium text-xs'>
                 <li>Zone Code</li>
                   <li className='text-gray'>C35</li>
                 <li>Zone name</li>
@@ -47,7 +46,6 @@ function RightSidebar(){
               <Rightbarbtn text={"CSV Download"} icon={<FaDownload style={btnstyle}/>}/>
           </div>
       </div>
-        </>
     )
 }
 
