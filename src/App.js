@@ -2,6 +2,7 @@ import './App.css';
 import '../src/global.css'
 import {FaFilter,FaBookmark, FaMapPin} from 'react-icons/fa';
 import Colorpicker from './images/colorpicker-s.svg';
+// import filter from './images/filter-s.svg';
 import MapsGoogle from './Components/Googlemap/MapsGoogle';
 import {Autocomplete} from '@react-google-maps/api';
 import Button from './Components/Button/Button';
@@ -20,12 +21,12 @@ function App() {
     {/* Top navbar */}
        <Navbar/>
     {/* search menu  */}
-      <div className='w-full lg:h-16 bg-white p-3 flex gap-5 lg:flex-row md:flex-col sm:flex-col sm:h-24'>
-           <div className='border-[1px] border-lightgray w-2/6 h-10 ml-16 rounded-lg p-2 flex flex-row gap-3 shadow-sm '>
+      <div className='w-11/12 lg:h-full bg-white p-3 flex gap-5 lg:flex-row md:flex-col sm:flex-col sm:h-24'>
+           <div className='border-[1px] border-zlightgray w-2/6 h-10 ml-5 rounded-lg p-2 flex flex-row gap-3 shadow-sm '>
             <div className='px-5'>
             <FaBookmark style={style}/>
             </div>
-            <span className='border-l-[1px] border-lightgray'></span>
+            <span className='border-l-[1px] border-zlightgray'></span>
             <div>
             <Autocomplete
       // onLoad={(e)=>setAutocomplete(e)}
@@ -46,14 +47,14 @@ function App() {
       
       <div className='items-center w-full'>
          <MapsGoogle/>
-        <div id="legend" className='bg-white w-52 border-[1px] z-[300] h-80 ml-16 mt-[500px] flex flex-col border-lightgray rounded-md text-center bottom-5 absolute '>
+        <div id="legend" className='bg-white w-56 border-[1px] z-[300] h-96 ml-16 mt-[500px] flex flex-col border-zlightgray rounded-[14px] text-center bottom-5 absolute '>
           {/* <div className='border-[2px] rounded-full border-zblue w-8 h-8 absolute top-[-8px] right-[-8px] bg-purple'> */}
-            <div className='flex justify-center items-center border-zblue bg-white border-[1px] w-8 h-8 rounded-full top-[-10px] right-[-10px] absolute'>
+            <div className='flex justify-center items-center border-zblue bg-white border-[2px] w-9 h-9 rounded-full top-[-10px] right-[-10px] absolute'>
           <img src={Colorpicker} alt="color picker" className='h-4'/>
             </div>
           {/* </div> */}
         {/* <img src={Colorpicker} alt="color picker" className='rounded border-[1px] border-zblue w-5 self-end absolute'/> */}
-           <div className='border-b-[1px] border-lightgray text-zgray flex flex-row justify-center p-2 uppercase text-zsm font-medium'>
+           <div className='border-b-[1px] border-zlightgray text-zgray flex flex-row justify-center p-3 uppercase text-zsm font-medium'>
               Zone Legend
            </div>
            <div className='text-left font-normal overflow-auto'>

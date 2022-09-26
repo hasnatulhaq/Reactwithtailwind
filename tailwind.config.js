@@ -49,10 +49,13 @@ module.exports = {
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
       'gray' : '#8c8c8c',
+      'zlightgray': "#e3e2e2",
       'lightgray' : '#D3D3D3',
       'zblue' : '#4257a7',
       'zgray' : '#5A5A5A',
-      'zlblue' : "#435ec8f2"
+      'zlblue' : "#435ec8f2",
+      'zbrown' : "rgb(58 57 57/var(--tw-bg-opacity))",
+      'zstrip' : "rgb(230 230 231/var(--tw-border-opacity))"
     },
   },
   plugins: [],
