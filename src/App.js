@@ -44,7 +44,6 @@ function App() {
            <Button text={"Listings"} icon={<FaMapPin style={mappin}/>}/>
            </div>
       </div>
-      
       <div className='items-center w-full'>
          <MapsGoogle/>
         <div id="legend" className='bg-white w-56 border-[1px] z-[300] h-96 ml-16 mt-[500px] flex flex-col border-zlightgray rounded-[14px] text-center bottom-5 absolute '>

@@ -1,6 +1,6 @@
 import Rightbarbtn from '../Rightbarbtn/Rightbarbtn';
 import Rightbartab from '../Rightbartab/Rightbartab';
-import {FaFileAlt, FaUndo, FaDownload,FaLink, FaBookmark} from 'react-icons/fa';
+import {FaFileAlt, FaUndo, FaDownload,FaLink, FaBookmark, FaCross, FaTimes} from 'react-icons/fa';
 
 
 
@@ -14,7 +14,7 @@ function RightSidebar(){
           <div className=' bg-white w-[32%] h-[87%] z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden'>
           <div className='flex flex-row border-b-[1px] border-zlightgray justify-between items-center p-2 h-9'>
             <span className='text-purple'><FaLink/></span>
-            <span className='text-2xl text-gray font-bold'>&times;</span>
+            <span className='text-gray font-light text-base'><FaTimes/></span>
           </div>
           <div className='flex justify-between border-b-[1px] border-zlightgray px-5 pr-5'>
             <h1 className='text-xl text-zblue h-20 p-2 font-medium'>Los Angeles,CA,USA</h1>

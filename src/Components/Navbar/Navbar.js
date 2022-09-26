@@ -6,8 +6,10 @@ function Navbar(){
     return(
         <>
          <nav className=' bg-white bottom-2 border-b-[1px] h-[70px] pt-6 p-5 border-zlightgray flex flex-row small:bg-metal'>
-               <div className='flex w-full flex-row ml-4 mr-16 '>
-               <img src={logo} alt="logo rezone" className="h-[35px] w-36 mb-5"/><sup className='text-purple border-[1px] text-zsm p-2 h-5 rounded'>Pro</sup>
+               <div className='flex w-full flex-row ml-4 mr-16'>
+               <img src={logo} alt="logo rezone" className="h-[35px] w-36 mb-5"/>
+               {/* <sup className='text-purple border-[1px] text-zsm p-2 h-5 rounded'>Pro</sup> */}
+               <div>pro</div>
                <div className=''>
                <ul className="flex space-x-32 text-gray ml-32 text-sm font-medium">
                    <li className='hover:text-zblue'>Dashboard</li>
