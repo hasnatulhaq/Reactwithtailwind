@@ -5,21 +5,23 @@ import logo  from '../../images/zoneomics_full.png'
 function Navbar(){
     return(
         <>
-         <nav className=' bg-white bottom-2 border-b-[1px] h-[70px] pt-6 p-5 border-zlightgray flex flex-row small:bg-metal'>
+         <nav className=' bg-white border-b-[1px] h-[64px] pt-4 p-4 border-zlightgray flex flex-row'>
                <div className='flex w-full flex-row ml-4 mr-16'>
-               <img src={logo} alt="logo rezone" className="h-[35px] w-36 mb-5"/>
+                <div className='flex flex-row h-full justify-center items-center gap-[0.2rem]'>
+                <img src={logo} alt="logo rezone" className="h-[36px] w-[136px]"/>
                {/* <sup className='text-purple border-[1px] text-zsm p-2 h-5 rounded'>Pro</sup> */}
-               <div>pro</div>
-               <div className=''>
-               <ul className="flex space-x-32 text-gray ml-32 text-sm font-medium">
-                   <li className='hover:text-zblue'>Dashboard</li>
-                   <li className='hover:text-zblue'>Zoning Data</li>
-                   <li className='hover:text-zblue'>API Docs</li>
-                   <li className='hover:text-zblue'>All Cities</li>
+               <div className='border-[1px] text-zpro text-zsm p-[3px] mb-4 w-[46.84px] font-medium flex justify-center items-center h-[22px] rounded-[3px] align-top border-zborder'>Pro</div>
+                </div>
+               <div className='mt-[6px] ml-1'>
+               <ul className="flex space-x-32 text-gray ml-32 text-sm font-medium leading-5">
+                   <li className='hover:text-zblue tracking-wide'>Dashboard</li>
+                   <li className='hover:text-zblue tracking-wide'>Zoning Data</li>
+                   <li className='hover:text-zblue tracking-wide'>API Docs</li>
+                   <li className='hover:text-zblue tracking-wide'>All Cities</li>
                </ul>
                </div>
                </div>
-               <div className='text-white text-xl flex justify-center items-center bg-zbrown rounded-[55px] h-10 w-[45px] self-center'>H</div>    
+               <div className='text-white text-base flex justify-center items-center bg-zbrown rounded-[55px] h-[36px] w-[40px] self-center mr-4 font-medium'>A</div>    
         </nav>
         </>
     )

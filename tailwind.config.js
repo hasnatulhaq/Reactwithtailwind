@@ -55,7 +55,11 @@ module.exports = {
       'zgray' : '#5A5A5A',
       'zlblue' : "#435ec8f2",
       'zbrown' : "rgb(58 57 57/var(--tw-bg-opacity))",
-      'zstrip' : "rgb(230 230 231/var(--tw-border-opacity))"
+      'zstrip' : "rgb(230 230 231/var(--tw-border-opacity))",
+      'zpro'  : "#395791",
+      'zborder' : "rgb(81 115 216/var(--tw-border-opacity))",
+      'regal-blue': '#243c5a',
+      'ztranparent': '#00000000'
     },
   },
   plugins: [],

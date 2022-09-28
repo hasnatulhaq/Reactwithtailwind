@@ -6,7 +6,7 @@ import axios from 'axios'
 
 const containerStyle = {
     width: '100wh',
-    height: '85vh',
+    height: '86.3vh',
   };
 
 
@@ -85,7 +85,7 @@ function MapsGoogle(){
           <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={13}
+      zoom={10}
       onLoad={onLoad}
       onUnmount={onUnmount}
     > 

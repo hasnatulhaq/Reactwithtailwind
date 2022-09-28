@@ -1,7 +1,8 @@
 import Rightbarbtn from '../Rightbarbtn/Rightbarbtn';
 import Rightbartab from '../Rightbartab/Rightbartab';
 import {FaFileAlt, FaUndo, FaDownload,FaLink, FaBookmark, FaCross, FaTimes} from 'react-icons/fa';
-
+import {ReactComponent as BookmarkIcon} from '../../images/bookmark.svg'
+import {ReactComponent as Newtab} from '../../images/Newtab-s.svg'
 
 
 function RightSidebar(){
@@ -13,12 +14,14 @@ function RightSidebar(){
     return(
           <div className=' bg-white w-[32%] h-[87%] z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden'>
           <div className='flex flex-row border-b-[1px] border-zlightgray justify-between items-center p-2 h-9'>
-            <span className='text-purple'><FaLink/></span>
+            <span className='text-purple'><Newtab className="fill-purple h-3.5 w-3.5"/></span>
             <span className='text-gray font-light text-base'><FaTimes/></span>
           </div>
           <div className='flex justify-between border-b-[1px] border-zlightgray px-5 pr-5'>
             <h1 className='text-xl text-zblue h-20 p-2 font-medium'>Los Angeles,CA,USA</h1>
-            <span className='mt-5 mr-5'><FaBookmark style={style} /></span>
+            <span className='mt-5 mr-5'>
+              <BookmarkIcon className="w-10 h-10 fill-zlightgray"/>
+            </span>
           </div>
           <div className='flex w-full border-b-[1px] border-zlightgray p-4'>
             <Rightbartab text={"Zone Data"}/>
