@@ -5,7 +5,7 @@ import logo  from '../../images/zoneomics_full.png'
 function Navbar(){
     return(
         <>
-         <nav className=' bg-white border-b-[1px] h-[64px] pt-4 p-4 border-zlightgray flex flex-row'>
+         <nav className=' bg-white border-b-[1px] h-[64px] pt-4 p-4 border-zlightgray flex flex-row lg:bg-white'>
                <div className='flex w-full flex-row ml-4 mr-16'>
                 <div className='flex flex-row h-full justify-center items-center gap-[0.2rem]'>
                 <img src={logo} alt="logo rezone" className="h-[36px] w-[136px]"/>
@@ -13,7 +13,7 @@ function Navbar(){
                <div className='border-[1px] text-zpro text-zsm p-[3px] mb-4 w-[46.84px] font-medium flex justify-center items-center h-[22px] rounded-[3px] align-top border-zborder'>Pro</div>
                 </div>
                <div className='mt-[6px] ml-1'>
-               <ul className="flex space-x-32 text-gray ml-32 text-sm font-medium leading-5">
+               <ul className="lg:flex md:flex text-gray lg:ml-32 text-sm font-medium leading-5  lg:space-x-32 md:space-x-20 md:ml-10 sm:hidden">
                    <li className='hover:text-zblue tracking-wide'>Dashboard</li>
                    <li className='hover:text-zblue tracking-wide'>Zoning Data</li>
                    <li className='hover:text-zblue tracking-wide'>API Docs</li>

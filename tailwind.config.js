@@ -25,17 +25,14 @@ module.exports = {
         '7xl': '5rem',
         'zsm': '12px'
       },
-      screens: {
+      // screens: {
         
-        'tablet': '845px',
-        'mobile' : '500px',
-        'small': {'min': '640px', 'max': '767px'},
-        'laptop': '1024px',
-        // => @media (min-width: 1024px) { ... }
-        
-        'desktop': '1280px',
-        // => @media (min-width: 1280px) { ... }
-      },
+      //   'tablet': '845px',
+      //   'mobile' : '500px',
+      //   'small': {'min': '640px', 'max': '767px'},
+      //   'laptop': '1024px',
+      //   'desktop': '1280px',
+      // },
     },
     colors: {
       transparent: 'transparent',
