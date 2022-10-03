@@ -21,7 +21,7 @@ function Navbar(){
                </ul>
                </div>
                </div>
-               <div className='text-white text-base flex justify-center items-center bg-zbrown rounded-[55px] h-[36px] w-[40px] self-center mr-4 font-medium'>A</div>    
+               <div className='text-white text-base flex justify-center items-center bg-zmapmenu rounded-[55px] h-[36px] w-[40px] self-center mr-4 font-medium'>A</div>    
         </nav>
         </>
     )

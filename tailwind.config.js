@@ -56,7 +56,8 @@ module.exports = {
       'zpro'  : "#395791",
       'zborder' : "rgb(81 115 216/var(--tw-border-opacity))",
       'regal-blue': '#243c5a',
-      'ztranparent': '#00000000'
+      'ztranparent': '#00000000',
+      'zmapmenu' : "#4F4C4C"
     },
   },
   plugins: [],
