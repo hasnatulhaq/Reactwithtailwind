@@ -1,8 +1,6 @@
 
 import {ReactComponent as Colorpicker} from '../../images/colorpicker-s.svg';
 
-// import {ReactComponent as Colorpicker} from './images/colorpicker-s.svg';
-
 
 
 
@@ -39,7 +37,6 @@ function Legend(){
         { color: "red", zonename: "1" },
         { color: "blue", zonename: "2" },
         { color: "green", zonename: "3" },
-
       ];
      
     return(

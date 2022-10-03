@@ -7,7 +7,6 @@ import { ReactComponent as Zoingboard } from "../../images/o-zoingboard.svg";
 
 function Mapcontrols(){
     return(
-        <>
          <div className="z-20 mx-6 my-1 w-1/5 absolute h-35 flex gap-10 p-2 bg-ztranparent">
           <div className="flex flex-col justify-center h-full w-10 items-center bg-zlightgray rounded">
             <div className=" bg-zmapmenu flex flex-col w-full h-full rounded justify-center items-center text-white">
@@ -34,7 +33,6 @@ function Mapcontrols(){
             </div>
           </div>
         </div>
-        </>
     )
 }
 

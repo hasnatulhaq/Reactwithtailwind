@@ -3,6 +3,12 @@ import logo  from '../../images/zoneomics_full.png'
 
 
 function Navbar(){
+    const legenddata = [
+        {menu: "Dashboard"},
+        {menu: "Zoning Data"},
+        {menu: "API Docs"},
+        {menu: "All Cities"},
+      ];
     return(
         <>
          <nav className=' bg-white border-b-[1px] h-[64px] pt-4 p-4 border-zlightgray flex flex-row lg:bg-white'>

@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbar/>
       <Mapbar/>
-      <div className="items-center w-full relative">
+      <div className="w-full relative">
         <Mapcontrols/>
         <MapsGoogle />
         <Legend />

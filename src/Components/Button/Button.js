@@ -1,9 +1,10 @@
-// import {FaFilter} from 'react-icons/fa';
+
+
+
+
 
 function Button({icon , text}){
 
-
-  // const filterstyle = { color : "lightgray"}
     return(
         <>
           {console.log(icon)}
