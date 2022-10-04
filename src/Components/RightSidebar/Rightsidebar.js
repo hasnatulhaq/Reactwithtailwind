@@ -19,8 +19,8 @@ function RightSidebar() {
   const btnstyle = { fontSize: "1.0rem" };
 
   return (
-    <div className=" bg-white w-[32rem] h-full z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden">
-      <div className="flex flex-row border-b-[1px] border-zlightgray justify-between items-center p-2 h-9">
+    <div className=" bg-white w-[35rem] h-full z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden">
+      <div className="flex flex-row border-b-[1px] border-zlightgray justify-between items-center px-5 pr-5 h-9">
         <span className="text-purple">
           <Newtab className="fill-purple h-3.5 w-3.5" />
         </span>

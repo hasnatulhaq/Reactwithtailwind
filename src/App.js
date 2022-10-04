@@ -17,7 +17,7 @@ function App() {
         <Mapcontrols/>
         <MapsGoogle />
         <Legend />
-        <RightSidebar />
+        <RightSidebar/>
       </div>
     </>
   );

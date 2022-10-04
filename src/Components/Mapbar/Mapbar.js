@@ -3,6 +3,7 @@ import { ReactComponent as Pin } from "../../images/pin-o.svg";
 import { ReactComponent as Filter } from "../../images/o-filter.svg";
 import { Autocomplete } from "@react-google-maps/api";
 import Button from "../Button/Button";
+import Dropdown from "../Dropdown/Dropdown";
 
 
 
@@ -11,7 +12,7 @@ import Button from "../Button/Button";
 function  Mapbar(){
     return(
         <>
-        <div className="w-11/12 lg:h-full bg-white p-3 flex gap-5 lg:flex-row md:flex-col sm:flex-col sm:h-24">
+        <div className="w-full lg:h-full bg-white p-3 flex gap-5 lg:flex-row md:flex-col sm:flex-col sm:h-24 relative">
         <div className="border-[1px] border-zlightgray lg:w-2/6 h-11 ml-5 rounded-lg p-2 flex flex-row gap-3 shadow-sm px-6 md:w-full">
           <button className="px-2">
             <Bookmark className="fill-zlightgray h-6 w-6 mx-auto my-auto" />
@@ -33,10 +34,15 @@ function  Mapbar(){
           </div>
         </div>
         <div className="flex gap-4 lg:flex-row items-end">
+          <div>
           <Button
             text={"Zone Picker"}
-            icon={<Filter className="w-3 h-2.5 fill-gray" />}
+            icon={<Filter className="w-3 h-2.5 fill-gray"/>}
           />
+            <Dropdown/>
+          </div>
+          <div>
+          </div>
           <Button
             text={"Plu Filter"}
             icon={<Filter className="w-3 h-2.5 fill-gray" />}
@@ -54,7 +60,9 @@ function  Mapbar(){
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
           />
         </div>
+      
       </div>
+    
         </>
     )
 }
