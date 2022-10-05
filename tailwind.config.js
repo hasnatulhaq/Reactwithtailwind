@@ -59,6 +59,8 @@ module.exports = {
       'ztranparent': '#00000000',
       'zmapmenu' : "#4F4C4C",
       "zdropbtn" : "#000000CC",
+      "zdrophed" : "rgba(117, 121, 121, 0.7)",
+      "zzonecase" : "rgba(58, 57, 57, 0.8)"
     },
   },
   plugins: [],

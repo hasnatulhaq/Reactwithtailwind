@@ -1,6 +1,6 @@
 import { ReactComponent as Bookmark } from "../../bookmark.svg";
 import { ReactComponent as Pin } from "../../images/pin-o.svg";
-import { ReactComponent as Filter } from "../../images/o-filter.svg";
+import { ReactComponent as Filter } from "../../images/filter-button.svg";
 import { Autocomplete } from "@react-google-maps/api";
 import Button from "../Button/Button";
 import Dropdown from "../Dropdown/Dropdown";
@@ -35,20 +35,20 @@ function  Mapbar(){
           <div>
           <Button
             text={"Zone Picker"}
-            icon={<Filter className="w-3 h-2.5 fill-gray"/>}
+            icon={<Filter className="h-2.5 fill-gray"/>}
           />
-            <Dropdown/>
+            <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter"/>
           </div>
           <div>
           <Button
             text={"Plu Filter"}
-            icon={<Filter className="w-3 h-2.5 fill-gray" />}
+            icon={<Filter className="h-2.5 fill-gray" />}
           />
           </div>
           <div>
           <Button
             text={"Prospect"}
-            icon={<Filter className="w-3 h-2.5 fill-gray" />}
+            icon={<Filter className="h-2.5 fill-gray" />}
           />
           </div>
           <div>
