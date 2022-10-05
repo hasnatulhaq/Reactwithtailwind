@@ -19,7 +19,7 @@ function Map(){
 
     return(
         <>
-          <ReactMapGl
+        <ReactMapGl
         width="100vw"
         height="100vh"
         style={{ borderTop: "5px solid #245c7c" }}
@@ -31,7 +31,7 @@ function Map(){
       >
         <NavigationControl/>
       </ReactMapGl>
-        </>
+      </>
     )
 
 }

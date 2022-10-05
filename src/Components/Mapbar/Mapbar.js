@@ -7,8 +7,6 @@ import Dropdown from "../Dropdown/Dropdown";
 
 
 
-
-
 function  Mapbar(){
     return(
         <>
@@ -42,27 +40,32 @@ function  Mapbar(){
             <Dropdown/>
           </div>
           <div>
-          </div>
           <Button
             text={"Plu Filter"}
             icon={<Filter className="w-3 h-2.5 fill-gray" />}
           />
+          </div>
+          <div>
           <Button
             text={"Prospect"}
             icon={<Filter className="w-3 h-2.5 fill-gray" />}
           />
+          </div>
+          <div>
           <Button
             text={"Zone Cases"}
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
           />
+          </div>
+          <div>
           <Button
             text={"Listings"}
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
           />
+          </div>
+          
         </div>
-      
       </div>
-    
         </>
     )
 }
