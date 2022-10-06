@@ -2,12 +2,10 @@
 import {ReactComponent as Colorpicker} from '../../images/colorpicker-s.svg';
 
 
-
-
 function Legend(){
 
     const legenddata = [
-        { color: "purple", zonename: "C1"},
+        { color: "purple", zonename: "C1fdddd"},
         { color: "blue", zonename: "C2" },
         { color: "green", zonename: "C3" },
         { color: "red", zonename: "C4" },
@@ -32,8 +30,8 @@ function Legend(){
         { color: "blue", zonename: "2" },
         { color: "green", zonename: "3" },
         { color: "red", zonename: "1" },
-        { color: "blue", zonename: "2" },
-        { color: "green", zonename: "3" },
+        { color: "blue", zonename: "2"},
+        { color: "green", zonename: "3"},
         { color: "red", zonename: "1" },
         { color: "blue", zonename: "2" },
         { color: "green", zonename: "3" },
@@ -51,7 +49,7 @@ function Legend(){
            <div className='text-left font-normal overflow-auto'>
                <ul className='p-3'>
                     {legenddata.map((data)=>(
-                         <li className='flex gap-2 items-center'><div className='w-3 rounded-full h-3 bg-purple'></div><h3>{data.zonename}</h3></li>
+                         <li className='flex gap-2 items-center truncate ...'><div className='w-3 rounded-full h-3 bg-purple'></div><h3>{data.zonename}</h3></li>
                     ))}
                </ul>
            </div>

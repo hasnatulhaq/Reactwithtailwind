@@ -20,8 +20,7 @@ function Dropdown({title,btntextl,btntextr}){
         { zonecode: "arts-13"},
         { zonecode: "arts-14"},
       ];
-    
-           
+       
     return(
            <div id="dropdown" className="bg-white border-[1px] w-96 h-[400px] absolute z-30 mt-3 rounded-lg border-zlightgray p-3">
             <div className="h-full w-full relative">
@@ -39,12 +38,14 @@ function Dropdown({title,btntextl,btntextr}){
             <div className="w-full p-2 flex flex-row">
                 <div className="border-dotted border-[2px] border-zlightgray max-h-max max-w-max text-xm">hello world</div>
             </div>
-            <div className="w-full h-48 flex flex-col p-2 lowercase text-base font-semibold text-zzonecase">
+            <div className="w-full h-48 flex flex-col p-3 lowercase text-base font-semibold text-zzonecase">
                 Zone cases
+                <div>  
+                </div>
                 <div className="h-4/5 border-t-[1px] border-b-[1px] p-5 border-zlightgray overflow-auto">
                     <ul className="flex gap-7 flex-col">
                     {zonelist.map((data)=>(
-                        <li className="flex gap-2 items-center uppercase text-xs text-zzonecase font-semibold"><input type="checkbox" className="w-4 h-4 border-[1px] border-zlblue"/>{data.zonecode}</li>
+                        <li className="flex gap-2 items-center uppercase text-xs text-zzonecase font-semibold"><input type="checkbox" className="w-4 h-4 border-[3px] border-zblue"/>{data.zonecode}</li>
                     ))}
                     </ul>
                 </div>
@@ -57,6 +58,5 @@ function Dropdown({title,btntextl,btntextr}){
        </div>
     )
 }
-
 
 export default Dropdown

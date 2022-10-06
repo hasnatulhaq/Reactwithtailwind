@@ -4,19 +4,17 @@ import {
   FaFileAlt,
   FaUndo,
   FaDownload,
-  FaLink,
-  FaBookmark,
-  FaCross,
-  FaTimes,
 } from "react-icons/fa";
 import { ReactComponent as BookmarkIcon } from "../../images/bookmark.svg";
 import { ReactComponent as Newtab } from "../../images/Newtab-s.svg";
 import { ReactComponent as Bugreport } from "../../images/bug-report.svg";
 import { ReactComponent as Cross } from "../../images/cross.svg";
+import { useState } from "react";
 
 function RightSidebar() {
-  const style = { color: "lightgray", fontSize: "2em" };
+  // const style = { color: "lightgray", fontSize: "2em" };
   const btnstyle = { fontSize: "1.0rem" };
+  const [index , setIndex] = useState(0);
 
   return (
     <div className=" bg-white w-[35rem] h-full z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden">
@@ -40,14 +38,83 @@ function RightSidebar() {
         </span>
       </div>
       <div className="flex w-full border-b-[1px] border-zlightgray p-4">
-        <Rightbartab text={"Zone Data"} />
-        <Rightbartab text={"Permitted use"} />
-        <Rightbartab text={"Controls"} />
-        <Rightbartab text={"Overlays"} />
+        <Rightbartab text={"Zone Data"}  
+          onClick={() => {
+            setIndex(0);
+          }}
+          />
+        <Rightbartab text={"Permitted use"}
+        onClick={() => {
+          setIndex(1);
+        }} 
+        />
+        <Rightbartab text={"Controls"}
+        onClick={() => {
+          setIndex(2);
+        }}/>
+        <Rightbartab text={"Overlays"}
+        onClick={() => {
+          setIndex(3);
+        }}/>
       </div>
       <div className="h-[600px] overflow-auto p-5">
-        <ul className="leading-10 uppercase font-medium text-xs">
+        <ul className="leading-10 uppercase font-medium text-xs" hidden={index !== 0}>
           <li>Zone Code</li>
+          <li className="text-gray">C35</li>
+          <li>Zone name</li>
+          <ul>
+            <li className="text-gray">C4</li>
+          </ul>
+          <li>Zone type</li>
+          <ul>
+            <li className="text-gray">Comercial</li>
+          </ul>
+          <li>Zone Code</li>
+          <li className="text-gray">C35</li>
+          <li>Zone name</li>
+          <ul>
+            <li className="text-gray">C4</li>
+          </ul>
+          <li>Zone type</li>
+          <ul>
+            <li className="text-gray">Comercial</li>
+          </ul>
+        </ul>
+        <ul className="leading-10 uppercase font-medium text-xs" hidden={index !== 1} >
+          <li>Permitted use</li>
+          <li className="text-gray">C35</li>
+          <li>Zone name</li>
+          <ul>
+            <li className="text-gray">C4</li>
+          </ul>
+          <li>Zone type</li>
+          <ul>
+            <li className="text-gray">Comercial</li>
+          </ul>
+          <li>Zone Code</li>
+          <li className="text-gray">C35</li>
+          <li>Zone name</li>
+          <ul>
+            <li className="text-gray">C4</li>
+          </ul>
+          <li>Zone type</li>
+          <ul>
+            <li className="text-gray">Comercial</li>
+          </ul>
+        </ul>
+        <ul className="leading-10 uppercase font-medium text-xs" hidden={index !== 2} >
+          <li>Controls</li>
+           <p>
+           Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+           when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+           It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+           It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+           </p>
+        </ul>
+        <ul className="leading-10 uppercase font-medium text-xs" hidden={index !== 3} >
+          <li>overlays</li>
           <li className="text-gray">C35</li>
           <li>Zone name</li>
           <ul>
