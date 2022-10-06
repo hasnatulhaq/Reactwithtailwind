@@ -45,8 +45,18 @@ function RightSidebar() {
         <Rightbartab text={"Controls"} />
         <Rightbartab text={"Overlays"} />
       </div>
-      <div className="h-[500px] overflow-auto p-5">
+      <div className="h-[600px] overflow-auto p-5">
         <ul className="leading-10 uppercase font-medium text-xs">
+          <li>Zone Code</li>
+          <li className="text-gray">C35</li>
+          <li>Zone name</li>
+          <ul>
+            <li className="text-gray">C4</li>
+          </ul>
+          <li>Zone type</li>
+          <ul>
+            <li className="text-gray">Comercial</li>
+          </ul>
           <li>Zone Code</li>
           <li className="text-gray">C35</li>
           <li>Zone name</li>
