@@ -58,7 +58,7 @@ function RightSidebar() {
         }}/>
       </div>
       <div className="h-[600px] overflow-auto p-5">
-        <ul className="leading-10 uppercase font-medium text-xs" hidden={index !== 0}>
+        <ul className="leading-10 p-5 uppercase font-medium text-xs" hidden={index !== 0}>
           <li>Zone Code</li>
           <li className="text-gray">C35</li>
           <li>Zone name</li>
@@ -80,7 +80,7 @@ function RightSidebar() {
             <li className="text-gray">Comercial</li>
           </ul>
         </ul>
-        <ul className="leading-10 uppercase font-medium text-xs" hidden={index !== 1} >
+        <ul className="leading-10 p-5 uppercase font-medium text-xs" hidden={index !== 1} >
           <li>Permitted use</li>
           <li className="text-gray">C35</li>
           <li>Zone name</li>
@@ -102,9 +102,9 @@ function RightSidebar() {
             <li className="text-gray">Comercial</li>
           </ul>
         </ul>
-        <ul className="leading-10 uppercase font-medium text-xs" hidden={index !== 2} >
+        <ul className="leading-10 p-5 uppercase font-medium text-xs" hidden={index !== 2} >
           <li>Controls</li>
-           <p>
+           <p className="font-normal normal-case">
            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -112,8 +112,9 @@ function RightSidebar() {
            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
            </p>
+           <li></li>
         </ul>
-        <ul className="leading-10 uppercase font-medium text-xs" hidden={index !== 3} >
+        <ul className="leading-10 p-5 uppercase font-medium text-xs" hidden={index !== 3} >
           <li>overlays</li>
           <li className="text-gray">C35</li>
           <li>Zone name</li>

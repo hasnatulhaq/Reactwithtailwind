@@ -4,10 +4,13 @@ import { ReactComponent as Filter } from "../../images/filter-button.svg";
 import { Autocomplete } from "@react-google-maps/api";
 import Button from "../Button/Button";
 import Dropdown from "../Dropdown/Dropdown";
-
+import { useState } from "react";
 
 
 function  Mapbar(){
+
+    const [index , setIndex] = useState()
+
     return(
         <>
         <div className="w-full lg:h-full bg-white p-3 flex gap-5 lg:flex-row md:flex-col sm:flex-col sm:h-24 relative">
@@ -36,32 +39,39 @@ function  Mapbar(){
           <Button
             text={"Zone Picker"}
             icon={<Filter className="h-2.5 fill-gray"/>}
+            onClick={() => {
+              setIndex(0);
+            }}
           />
-            <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter"/>
+            <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" hidden={index !==0}/>
           </div>
           <div>
           <Button
             text={"Plu Filter"}
             icon={<Filter className="h-2.5 fill-gray" />}
           />
+           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" hidden={index !==1}/>
           </div>
           <div>
           <Button
             text={"Prospect"}
             icon={<Filter className="h-2.5 fill-gray" />}
           />
+           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" hidden={index !==2}/>
           </div>
           <div>
           <Button
             text={"Zone Cases"}
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
           />
+           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" hidden={index !==3}/>
           </div>
           <div>
           <Button
             text={"Listings"}
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
           />
+           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" hidden={index !==4}/>
           </div>
           
         </div>
