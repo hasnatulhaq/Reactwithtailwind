@@ -1,4 +1,5 @@
 import { ReactComponent as Bookmark } from "../../bookmark.svg";
+import {ReactComponent as Favourite} from "../../images/favourite-heart.svg"
 import { ReactComponent as Pin } from "../../images/pin-o.svg";
 import { ReactComponent as Filter } from "../../images/filter-button.svg";
 import { Autocomplete } from "@react-google-maps/api";
@@ -9,11 +10,28 @@ import { useState } from "react";
 
 function  Mapbar(){
 
-    const [index , setIndex] = useState()
+    const [index , setIndex] = useState(0)
+
+
+    const zonelist = [
+      { zonecode: "arts-1"},
+      { zonecode: "arts-2"},
+      { zonecode: "arts-3"},
+      { zonecode: "arts-4"},
+      { zonecode: "arts-5"},
+      { zonecode: "arts-6"},
+      { zonecode: "arts-7"},
+      { zonecode: "arts-8"},
+      { zonecode: "arts-9"},
+      { zonecode: "arts-10"},
+      { zonecode: "arts-11"},
+      { zonecode: "arts-12"},
+      { zonecode: "arts-13"},
+      { zonecode: "arts-14"},
+    ];
 
     return(
-        <>
-        <div className="w-full lg:h-full bg-white p-3 flex gap-5 lg:flex-row md:flex-col sm:flex-col sm:h-24 relative">
+      <div className="w-full lg:h-full bg-white p-3 flex gap-5 lg:flex-row md:flex-col sm:flex-col sm:h-24 relative">
         <div className="border-[1px] border-zlightgray lg:w-2/6 h-11 ml-5 rounded-lg p-2 flex flex-row gap-3 shadow-sm px-6 md:w-full">
           <button className="px-2">
             <Bookmark className="fill-zlightgray h-6 w-6 mx-auto my-auto" />
@@ -43,40 +61,39 @@ function  Mapbar(){
               setIndex(0);
             }}
           />
-            <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" hidden={index !==0}/>
+            <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==0}/>
           </div>
           <div>
           <Button
             text={"Plu Filter"}
             icon={<Filter className="h-2.5 fill-gray" />}
           />
-           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" hidden={index !==1}/>
+           <Dropdown title="Plu Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==1}/>
           </div>
           <div>
           <Button
             text={"Prospect"}
             icon={<Filter className="h-2.5 fill-gray" />}
           />
-           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" hidden={index !==2}/>
+           <Dropdown title="Prospect Filter" zonecasestitle="zone from propect filter" btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2}/>
           </div>
           <div>
           <Button
             text={"Zone Cases"}
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
           />
-           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" hidden={index !==3}/>
+           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==3}/>
           </div>
           <div>
           <Button
             text={"Listings"}
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
           />
-           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" hidden={index !==4}/>
+           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==4}/>
           </div>
-          
+
         </div>
       </div>
-        </>
     )
 }
 
