@@ -7,7 +7,7 @@ function Legend(){
     const legenddata = [
         { color: "purple", zonename: "C1fdddd"},
         { color: "blue", zonename: "C2" },
-        { color: "green", zonename: "C3" },
+        { color: "green", zonename: "C3"},
         { color: "red", zonename: "C4" },
         { color: "blue", zonename: "2" },
         { color: "green", zonename: "3" },
@@ -36,7 +36,8 @@ function Legend(){
         { color: "blue", zonename: "2" },
         { color: "green", zonename: "3" },
       ];
-     
+
+
     return(
         <>
            <div id="legend" className='bg-white w-56 border-[1px] z-[300] h-96 ml-16 mt-[500px] flex flex-col border-zlightgray rounded-[14px] text-center bottom-5 absolute '>
