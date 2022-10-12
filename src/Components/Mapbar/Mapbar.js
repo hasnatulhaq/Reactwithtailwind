@@ -8,6 +8,9 @@ import Dropdown from "../Dropdown/Dropdown";
 import { useState } from "react";
 import Dropdownsearch from "../Dropdown/Dropdownsearch/Dropdownsearch";
 import Dotteddiv from "../Dropdown/Dotteddiv/Dotteddiv";
+import ZoneCases from "../Dropdown/Zonecases/Zonecases";
+import Counter from "../Counter/Counter";
+import Selectdropdown from "../Dropdown/Selectdropdown/Selectdropdown";
 
 
 function  Mapbar(){
@@ -63,7 +66,7 @@ function  Mapbar(){
               setIndex(0);
             }}
           />
-          <Dropdown title="Zone Filter" dotteddiv={<Dotteddiv/>}  btntextl="Filter" filtersearch={<Dropdownsearch/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==0} zonetitle="Zone Cases"/>
+          <Dropdown title="Zone Filter" dotteddiv={<Dotteddiv/>}  btntextl="Filter" filtersearch={<Dropdownsearch/>} btntextr="Clear Filter" zonecases={<ZoneCases zonetitle="zone cases" zonelist={zonelist}/>} hidden={index !==0}/>
           </div>
           <div>
           <Button
@@ -73,7 +76,7 @@ function  Mapbar(){
               setIndex(1);
             }}
           />
-           <Dropdown title="Plu Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==1} zonetitle="zone from propect filter"/>
+           <Dropdown title="Plu Filter" btntextl="Filter" btntextr="Clear Filter" zonecases={<ZoneCases zonetitle="Filter zone" zonelist={zonelist}/>} hidden={index !==1}/>
           </div>
           <div>
           <Button
@@ -83,7 +86,7 @@ function  Mapbar(){
               setIndex(2);
             }}
           />
-           <Dropdown title="Prospect Filter" zonetitle="Filter Zone" btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2}/>
+           <Dropdown title="Prospect Filter"  zonecases={<ZoneCases zonetitle="Filter zone" selectdropdown={<Selectdropdown title="zones" placeholder="Select a zone"/>} pludropdown={<Selectdropdown title="Plu Filter" placeholder="Select a zone"/>} counter={<Counter title="Min"/>}/>} parcelsize={<ZoneCases zonetitle="Parcel Size"/>} btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2}/>
           </div>
           <div>
           <Button
@@ -93,7 +96,7 @@ function  Mapbar(){
               setIndex(3);
             }}
           />
-           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==3} zonetitle="zone from propect filter"/>
+           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==3} zonetitle="Filter"/>
           </div>
           <div>
           <Button
@@ -103,7 +106,7 @@ function  Mapbar(){
               setIndex(4);
             }}
           />
-           <Dropdown title="Listings" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==4} zonetitle="zone from propect filter"/>
+           <Dropdown title="Listings" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==4} zonetitle="Filter"/>
           </div>
         </div>
       </div>

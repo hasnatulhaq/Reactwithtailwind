@@ -1,7 +1,5 @@
 import { ReactComponent as Cross } from "../../images/cross.svg";
 
-import ZoneCases from "./Zonecases/Zonecases";
-
 function Dropdown(props)
     {
     return(
@@ -22,7 +20,8 @@ function Dropdown(props)
             {props.filtersearch}
             {props.dotteddiv}
             <div className="w-full h-52 flex flex-col p-3 text-base font-semibold text-zzonecase uppercase">
-                <ZoneCases zonetitle={props.zonetitle} zonelist={props.zonelist}/>
+                {props.zonecases}
+                {props.parcelsize}
             </div>
             <div className="bottom-3 flex absolute w-full h-10 font-medium">
                 <button className="h-full w-1/2 bg-zbrown rounded-lg text-white">{props.btntextl}</button>
