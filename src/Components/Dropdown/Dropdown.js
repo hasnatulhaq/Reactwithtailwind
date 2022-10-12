@@ -13,7 +13,11 @@ function Dropdown(props)
                 <h1 className="uppercase text-zdrophed text-base font-semibold">{props.title}</h1>
                 <span>{props?.icon}</span>
                 </div>
+                <span onClick={()=>{
+                    console.log(props.hidden)
+                }}>
                 <Cross className="h-5 w-5"/>
+                </span>
             </div>
             {props.filtersearch}
             {props.dotteddiv}

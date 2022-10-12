@@ -12,7 +12,7 @@ import Dotteddiv from "../Dropdown/Dotteddiv/Dotteddiv";
 
 function  Mapbar(){
 
-    const [index , setIndex] = useState(0)
+    const [index , setIndex] = useState()
 
     const zonelist = [
       { zonecode: "arts-1"},
@@ -30,6 +30,7 @@ function  Mapbar(){
       { zonecode: "arts-13"},
       { zonecode: "arts-14"},
     ];
+
 
     return(
       <div className="w-full lg:h-full bg-white p-3 flex gap-5 lg:flex-row md:flex-col sm:flex-col sm:h-24 relative">
@@ -62,12 +63,15 @@ function  Mapbar(){
               setIndex(0);
             }}
           />
-            <Dropdown title="Zone Filter" dotteddiv={<Dotteddiv/>}  btntextl="Filter" filtersearch={<Dropdownsearch/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==0} zonetitle="Zone Cases"/>
+          <Dropdown title="Zone Filter" dotteddiv={<Dotteddiv/>}  btntextl="Filter" filtersearch={<Dropdownsearch/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==0} zonetitle="Zone Cases"/>
           </div>
           <div>
           <Button
             text={"Plu Filter"}
             icon={<Filter className="h-2.5 fill-gray" />}
+            onClick={() => {
+              setIndex(1);
+            }}
           />
            <Dropdown title="Plu Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==1} zonetitle="zone from propect filter"/>
           </div>
@@ -75,6 +79,9 @@ function  Mapbar(){
           <Button
             text={"Prospect"}
             icon={<Filter className="h-2.5 fill-gray" />}
+            onClick={() => {
+              setIndex(2);
+            }}
           />
            <Dropdown title="Prospect Filter" zonetitle="Filter Zone" btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2}/>
           </div>
@@ -82,6 +89,9 @@ function  Mapbar(){
           <Button
             text={"Zone Cases"}
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
+            onClick={() => {
+              setIndex(3);
+            }}
           />
            <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==3} zonetitle="zone from propect filter"/>
           </div>
@@ -89,8 +99,11 @@ function  Mapbar(){
           <Button
             text={"Listings"}
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
+            onClick={() => {
+              setIndex(4);
+            }}
           />
-           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==4} zonetitle="zone from propect filter"/>
+           <Dropdown title="Listings" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==4} zonetitle="zone from propect filter"/>
           </div>
         </div>
       </div>

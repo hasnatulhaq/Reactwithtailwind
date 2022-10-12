@@ -12,10 +12,9 @@ import { ReactComponent as Cross } from "../../images/cross.svg";
 import { useState } from "react";
 
 function RightSidebar() {
-  // const style = { color: "lightgray", fontSize: "2em" };
+  
   const btnstyle = { fontSize: "1.0rem" };
   const [index , setIndex] = useState(0);
-
   return (
     <div className=" bg-white w-[35rem] h-full z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden">
       <div className="flex flex-row border-b-[1px] border-zlightgray justify-between items-center px-5 pr-5 h-9">
