@@ -141,7 +141,10 @@ function RightSidebar() {
           text={"Get Report"}
           icon={<FaFileAlt style={btnstyle} />}
         />
-        <Rightbarbtn text={"Order Report"} icon={<FaUndo style={btnstyle} />} />
+        <Rightbarbtn 
+          text={"Order Report"} 
+          icon={<FaUndo style={btnstyle} />} 
+          />
         <Rightbarbtn
           text={"CSV Download"}
           icon={<FaDownload style={btnstyle} />}

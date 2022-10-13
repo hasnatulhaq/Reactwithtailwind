@@ -3,9 +3,15 @@ import { ReactComponent as Opacity } from "../../images/o-brightness.svg";
 import { ReactComponent as Screenshot } from "../../images/o-screenshot.svg";
 import { ReactComponent as Print } from "../../images/o-print.svg";
 import { ReactComponent as Zoingboard } from "../../images/o-zoingboard.svg";
+import ControlsDropdown from "./ControlsDropdown/ControlsDropdown";
+import { useState } from "react";
 
 
 function Mapcontrols(){
+
+   const [index , setIndex] = useState()
+
+
     return(
          <div className="z-20 mx-6 my-1 w-1/5 absolute h-35 flex gap-10 p-2 bg-ztranparent">
           <div className="flex flex-col justify-center h-full w-10 items-center bg-zlightgray rounded">
@@ -32,6 +38,7 @@ function Mapcontrols(){
               <Zoingboard className="fill-white stroke-1 stroke-gray" />
             </div>
           </div>
+           <ControlsDropdown/>
         </div>
     )
 }
