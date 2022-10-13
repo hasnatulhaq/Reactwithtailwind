@@ -5,6 +5,7 @@ import { ReactComponent as Print } from "../../images/o-print.svg";
 import { ReactComponent as Zoingboard } from "../../images/o-zoingboard.svg";
 import ControlsDropdown from "./ControlsDropdown/ControlsDropdown";
 import { useState } from "react";
+import Headingdiv from "./Headingdiv/Headingdiv";
 
 
 function Mapcontrols(){
@@ -38,10 +39,9 @@ function Mapcontrols(){
               <Zoingboard className="fill-white stroke-1 stroke-gray" />
             </div>
           </div>
-           <ControlsDropdown/>
+           <ControlsDropdown Headingdiv={<Headingdiv text="Print pdf"/>}/>
         </div>
     )
 }
-
 
 export default Mapcontrols
