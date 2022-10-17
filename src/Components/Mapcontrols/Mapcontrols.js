@@ -6,13 +6,14 @@ import { ReactComponent as Zoingboard } from "../../images/o-zoingboard.svg";
 import ControlsDropdown from "./ControlsDropdown/ControlsDropdown";
 import { useState } from "react";
 import Headingdiv from "./Headingdiv/Headingdiv";
+import Iconbutton from "./Iconbutton/Iconbutton";
 
 
 function Mapcontrols(){
 
    const [index , setIndex] = useState()
 
-
+   
     return(
          <div className="z-20 mx-6 my-1 w-1/5 absolute h-35 flex gap-10 p-2 bg-ztranparent">
           <div className="flex flex-col justify-center h-full w-10 items-center bg-zlightgray rounded">
@@ -23,23 +24,22 @@ function Mapcontrols(){
             </div>
           </div>
           <div className="w-full flex flex-row gap-[1px] h-[35px] justify-center items-center bg-zlightgray rounded-md text-white">
-            <div className="w-1/5 h-full rounded-l-md bg-zmapmenu flex justify-center items-center pt-[0.5rem] pb-[0.5rem]">
-              <Layer className="fill-white" />
-            </div>
-            <div className="w-1/5 h-full bg-zmapmenu flex justify-center items-center pt-[0.5rem] pb-[0.5rem]">
-              <Opacity className="fill-white" />
-            </div>
-            <div className="w-1/5 h-full bg-zmapmenu flex justify-center items-center pt-[0.5rem] pb-[0.5rem]">
-              <Screenshot className="fill-white" />
-            </div>
-            <div className="w-1/5 h-full bg-zmapmenu flex justify-center items-center pt-[0.5rem] pb-[0.5rem]">
-              <Print className="fill-white" />
-            </div>
-            <div className="w-1/5 h-full bg-zmapmenu rounded-r-md flex justify-center items-center pt-[0.5rem] pb-[0.5rem]">
-              <Zoingboard className="fill-white stroke-1 stroke-gray" />
-            </div>
+            <Iconbutton icon={<Layer className="fill-white"/>}  onClick={() => {
+              setIndex(0);}}/>
+            <Iconbutton icon={<Opacity className="fill-white" />} onClick={
+              () => 
+              {setIndex(1);}}/>
+            <Iconbutton icon={<Screenshot className="fill-white" />} onClick={() => {setIndex(2);}}/>
+            <Iconbutton icon={<Print className="fill-white" />} onClick={() => {setIndex(3);}}/>
+            <Iconbutton icon={<Zoingboard className="fill-white stroke-1 stroke-gray" />} onClick={() => {setIndex(4);}}/>
+            <Iconbutton icon={<Layer className="fill-white"/>} onClick={() => {setIndex(5);}}/>
           </div>
-           <ControlsDropdown Headingdiv={<Headingdiv text="Print pdf"/>}/>
+           <ControlsDropdown headingdiv={<Headingdiv text="Print pdf"/>} hidden={index !== 0}/>
+           <ControlsDropdown headingdiv={<Headingdiv text="opacity"/>} hidden={index !== 1}/>
+           <ControlsDropdown headingdiv={<Headingdiv text="Screenshot"/>} hidden={index !== 2}/>
+           <ControlsDropdown headingdiv={<Headingdiv text="print"/>} hidden={index !== 3}/>
+           <ControlsDropdown headingdiv={<Headingdiv text="zoning"/>} hidden={index !== 4}/>
+           <ControlsDropdown headingdiv={<Headingdiv text="Print pdf"/>} hidden={index !== 5}/>
         </div>
     )
 }

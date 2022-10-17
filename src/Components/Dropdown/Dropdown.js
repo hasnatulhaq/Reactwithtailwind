@@ -3,7 +3,7 @@ import { ReactComponent as Cross } from "../../images/cross.svg";
 function Dropdown(props)
     {
     return(
-         <div id="dropdown" className="bg-white border-[1px] w-96 h-[400px] absolute z-30 mt-3 rounded-lg border-zlightgray p-3" hidden={props.hidden}>
+         <div id="dropdown" className="bg-white border-[1px] w-96 h-[400px] absolute z-30 mt-3 rounded-lg border-zlightgray p-3" hidden={props?.hidden}>
             <div className="h-full w-full relative">
             <div className="w-3 h-3 border-t-[1px] border-l-[1px] bg-white rotate-45 border-zlightgray relative top-[-19px] ml-[100px]"></div>
             <div className="w-full pt-0 flex flex-row justify-between items-center text-lg">
@@ -11,9 +11,7 @@ function Dropdown(props)
                 <h1 className="uppercase text-zdrophed text-base font-semibold">{props.title}</h1>
                 <span>{props?.icon}</span>
                 </div>
-                <span onClick={()=>{
-                    console.log(props.hidden)
-                }}>
+                <span>
                 <Cross className="h-5 w-5"/>
                 </span>
             </div>
