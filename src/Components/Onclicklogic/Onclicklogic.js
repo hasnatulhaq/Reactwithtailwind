@@ -17,5 +17,4 @@ const Onclick = (WrappedComponent)=>{
 }
 
 
-
 export default Onclick

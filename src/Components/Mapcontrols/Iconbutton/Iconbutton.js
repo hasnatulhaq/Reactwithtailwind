@@ -1,4 +1,4 @@
-import Onclicklogic from "../../Onclicklogic/Onclicklogic"
+// import Onclicklogic from "../../Onclicklogic/Onclicklogic"
 
 
 function Iconbutton({icon , onClick}){
@@ -9,4 +9,4 @@ function Iconbutton({icon , onClick}){
     )
 }
 
-export default Onclicklogic(Iconbutton)
+export default Iconbutton
