@@ -3,14 +3,14 @@ import { ReactComponent as Opacity } from "../../images/o-brightness.svg";
 import { ReactComponent as Screenshot } from "../../images/o-screenshot.svg";
 import { ReactComponent as Print } from "../../images/o-print.svg";
 import { ReactComponent as Zoingboard } from "../../images/o-zoingboard.svg";
-import ControlsDropdown from "./ControlsDropdown/ControlsDropdown";
 import { useState } from "react";
-import Headingdiv from "./Headingdiv/Headingdiv";
 import Iconbutton from "./Iconbutton/Iconbutton";
 import ControlTray from "./ControlTray";
 
 function Mapcontrols() {
-  const [index, setIndex] = useState(-1);
+
+  
+  const [index, setIndex] = useState();
 
   console.log(index);
   return (
@@ -53,14 +53,8 @@ function Mapcontrols() {
             setIndex(4);
           }}
         />
-        <Iconbutton
-          icon={<Layer className="fill-white" />}
-          onClick={() => {
-            setIndex(5);
-          }}
-        />
       </div>
-      <ControlTray index={index} />
+      <ControlTray index={index}/>
     </div>
   );
 }

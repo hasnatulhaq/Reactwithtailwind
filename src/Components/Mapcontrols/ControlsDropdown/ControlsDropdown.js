@@ -1,10 +1,8 @@
 import classNames from "classnames";
 import { ReactComponent as Cross } from "../../../images/cross.svg";
-import { ReactComponent as Print } from "../../../images/o-print.svg";
-import Rightbarbtn from "../../Rightbarbtn/Rightbarbtn";
+
 
 function ControlsDropdown(props) {
-  console.log(props);
   return (
     <div
       className={classNames(
@@ -17,10 +15,9 @@ function ControlsDropdown(props) {
       <div className="flex justify-end">
         <Cross className="h-5 w-5" />
       </div>
-      <Rightbarbtn
-        text="Print Pdf"
-        icon={<Print className="h-5 w-5 fill-white" />}
-      />
+      {props.headingdiv}
+      {props.Slider}
+      {props.button}
     </div>
   );
 }
