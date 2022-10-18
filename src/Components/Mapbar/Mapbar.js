@@ -86,7 +86,7 @@ function  Mapbar(){
               setIndex(2);
             }}
           />
-           <Dropdown title="Prospect Filter"  zonecases={<ZoneCases zonetitle="Filter zone" selectdropdown={<Selectdropdown title="zones" placeholder="Select a zone"/>} pludropdown={<Selectdropdown title="Plu Filter" placeholder="Select a zone"/>} counter={<Counter title="Min"/>}/>} parcelsize={<ZoneCases zonetitle="Parcel Size"/>} btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2}/>
+           <Dropdown title="Prospect Filter"  zonecases={<ZoneCases zonetitle="Filter zone" counter={<Counter title="Min"/>}/>} parcelsize={<ZoneCases zonetitle="Parcel Size"/>} btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2}/>
           </div>
           <div>
           <Button

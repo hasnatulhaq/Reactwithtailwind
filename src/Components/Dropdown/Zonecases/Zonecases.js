@@ -7,7 +7,8 @@ function ZoneCases(props){
             </div> 
                 <div className="h-4/5 border-t-[1px] border-b-[1px] p-5 border-zlightgray overflow-auto">
                  <div className="flex flex-col gap-5">
-                 {props.counter}
+                <div className=""></div>
+                 {props.counter} {props.counter}
                 {props.selectdropdown}
                 {props.pludropdown}
                  </div>
