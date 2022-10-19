@@ -18,7 +18,6 @@ function Map(){
       });
 
     return(
-        <>
         <ReactMapGl
         width="100vw"
         height="100vh"
@@ -31,7 +30,6 @@ function Map(){
       >
         <NavigationControl/>
       </ReactMapGl>
-      </>
     )
 
 }

@@ -11,7 +11,6 @@ export default function ControlTray({ index }) {
     <>
       <ControlsDropdown
         hidden={index === 0}
-        
       />
       <ControlsDropdown
         headingdiv={<Headingdiv text="opacity" />}
@@ -27,7 +26,7 @@ export default function ControlTray({ index }) {
         />}
       />
       <ControlsDropdown
-        headingdiv={<Headingdiv text="print" />}
+        headingdiv={<Headingdiv text="Print this map to a pdf document along with the legends" />}
         hidden={index === 3}
         button={<Rightbarbtn
           text="Print"

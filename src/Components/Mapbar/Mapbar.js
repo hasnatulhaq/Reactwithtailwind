@@ -10,7 +10,6 @@ import Dropdownsearch from "../Dropdown/Dropdownsearch/Dropdownsearch";
 import Dotteddiv from "../Dropdown/Dotteddiv/Dotteddiv";
 import ZoneCases from "../Dropdown/Zonecases/Zonecases";
 import Counter from "../Counter/Counter";
-import Selectdropdown from "../Dropdown/Selectdropdown/Selectdropdown";
 
 
 function  Mapbar(){
@@ -86,7 +85,7 @@ function  Mapbar(){
               setIndex(2);
             }}
           />
-           <Dropdown title="Prospect Filter"  zonecases={<ZoneCases zonetitle="Filter zone" counter={<Counter title="Min"/>}/>} parcelsize={<ZoneCases zonetitle="Parcel Size"/>} btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2}/>
+           <Dropdown title="Prospect Filter"  zonecases={<ZoneCases zonetitle="Filter zone" counter={<Counter title="min"/>} counters={<Counter title="max"/>}/>}   parcelsize={<ZoneCases zonetitle="Parcel Size" counter={<Counter title="min"/>} counters={<Counter title="max"/>}/>} btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2}/>
           </div>
           <div>
           <Button

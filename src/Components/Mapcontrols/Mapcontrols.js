@@ -12,7 +12,7 @@ function Mapcontrols() {
   
   const [index, setIndex] = useState();
 
-  console.log(index);
+  
   return (
     <div className="z-20 mx-6 my-1 w-1/5 absolute h-35 flex gap-10 p-2 bg-ztranparent">
       <div className="flex flex-col justify-center h-full w-10 items-center bg-zlightgray rounded">
