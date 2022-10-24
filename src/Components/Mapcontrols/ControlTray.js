@@ -11,6 +11,7 @@ export default function ControlTray({ index }) {
     <>
       <ControlsDropdown
         hidden={index === 0}
+        width="95%"
       />
       <ControlsDropdown
         headingdiv={<Headingdiv text="opacity" />}

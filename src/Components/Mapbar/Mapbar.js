@@ -91,21 +91,13 @@ function  Mapbar(){
           <Button
             text={"Zone Cases"}
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
-            onClick={() => {
-              setIndex(3);
-            }}
           />
-           <Dropdown title="Zone Filter" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==3} zonetitle="Filter"/>
           </div>
           <div>
           <Button
             text={"Listings"}
             icon={<Pin className="w-2.5 h-4 fill-gray" />}
-            onClick={() => {
-              setIndex(4);
-            }}
           />
-           <Dropdown title="Listings" btntextl="Filter" btntextr="Clear Filter" zonelist={zonelist} hidden={index !==4} zonetitle="Filter"/>
           </div>
         </div>
       </div>

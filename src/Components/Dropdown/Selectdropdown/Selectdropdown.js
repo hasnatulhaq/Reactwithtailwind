@@ -1,6 +1,4 @@
-
 import {ReactComponent as Search} from "../../../images/search.svg"
-
 
 
 function Selectdropdown({title , placeholder }){
@@ -17,7 +15,6 @@ function Selectdropdown({title , placeholder }){
         </div>
     )
 }
-
 
 export default Selectdropdown
 

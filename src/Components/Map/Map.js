@@ -31,7 +31,5 @@ function Map(){
         <NavigationControl/>
       </ReactMapGl>
     )
-
 }
-
 export default Map

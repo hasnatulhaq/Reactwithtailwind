@@ -3,6 +3,7 @@ import { ReactComponent as Cross } from "../../../images/cross.svg";
 
 
 function ControlsDropdown(props) {
+   console.log(props.width , "width of the component")
   return (
     <div
       className={classNames(
