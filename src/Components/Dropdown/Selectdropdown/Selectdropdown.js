@@ -18,4 +18,3 @@ function Selectdropdown({title , placeholder }){
 
 export default Selectdropdown
 
-

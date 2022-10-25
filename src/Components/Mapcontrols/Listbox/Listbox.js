@@ -3,7 +3,7 @@
 function Listbox(){
     return(
         
-          <div className="flex flex-col">
+          <div className="flex flex-col text-white">
                 <h1>Base map</h1>
                 <ul>
                     <li>Road</li>

@@ -3,7 +3,8 @@ import { ReactComponent as Cross } from "../../../images/cross.svg";
 
 
 function ControlsDropdown(props) {
-   console.log(props.width , "width of the component")
+         const data = -1;
+ 
   return (
     <div
       className={classNames(
@@ -13,9 +14,10 @@ function ControlsDropdown(props) {
         }
       )}
     >
-      <div className="flex justify-end">
-        <Cross className="h-5 w-5" />
+      <div className="flex justify-end cursor-pointer" onClick={()=>{props.datafromchild(data)}}>
+        <Cross className="h-5 w-5 hover:bg-gray"/>
       </div>
+      {props.layer}
       {props.headingdiv}
       {props.Slider}
       {props.button}

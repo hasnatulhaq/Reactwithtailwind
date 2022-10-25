@@ -8,10 +8,12 @@ import Iconbutton from "./Iconbutton/Iconbutton";
 import ControlTray from "./ControlTray";
 
 function Mapcontrols() {
-
   
   const [index, setIndex] = useState();
 
+  const datafromchild =(data)=>{
+    setIndex(data)
+}
   
   return (
     <div className="z-20 mx-6 my-1 w-1/5 absolute h-35 flex gap-10 p-2 bg-ztranparent">
@@ -49,12 +51,9 @@ function Mapcontrols() {
         />
         <Iconbutton
           icon={<Zoingboard className="fill-white stroke-1 stroke-gray" />}
-          onClick={() => {
-            setIndex(4);
-          }}
         />
       </div>
-      <ControlTray index={index}/>
+      <ControlTray index={index} datafromchild={datafromchild}/>
     </div>
   );
 }

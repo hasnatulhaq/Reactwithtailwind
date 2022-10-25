@@ -1,8 +1,9 @@
 import { ReactComponent as Cross } from "../../images/cross.svg";
 
-function Dropdown(props, setindex){
-        console.log(props.hidden , "hidden value")
-           
+function Dropdown(props){
+         
+      const data = -1;
+        
     return(
          <div id="dropdown" className="bg-white border-[1px] w-96 h-[400px] absolute z-30 mt-3 rounded-lg border-zlightgray p-3 grow" hidden={props?.hidden}>
             <div className="h-full w-full relative">
@@ -12,13 +13,14 @@ function Dropdown(props, setindex){
                 <h1 className="uppercase text-zdrophed text-base font-semibold">{props.title}</h1>
                 <span>{props?.icon}</span>
                 </div>
-                <span >
+                <span className="cursor-pointer" onClick={()=>{props.datafromchild(data)}}>
                 <Cross className="h-5 w-5"/>
                 </span>
             </div>
             {props.filtersearch}
             {props.dotteddiv}
             <div className="w-full h-52 flex flex-col p-3 text-base font-semibold text-zzonecase uppercase">
+                {props.filterzone}
                 {props.zonecases}
                 {props.parcelsize}
             </div>

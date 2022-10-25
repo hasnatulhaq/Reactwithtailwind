@@ -15,6 +15,11 @@ import Counter from "../Counter/Counter";
 function  Mapbar(){
 
     const [index , setIndex] = useState()
+    
+    const datafromchild =(data)=>{
+          setIndex(data)
+    }
+
 
     const zonelist = [
       { zonecode: "arts-1"},
@@ -65,7 +70,7 @@ function  Mapbar(){
               setIndex(0);
             }}
           />
-          <Dropdown title="Zone Filter" dotteddiv={<Dotteddiv/>}  btntextl="Filter" filtersearch={<Dropdownsearch/>} btntextr="Clear Filter" zonecases={<ZoneCases zonetitle="zone cases" zonelist={zonelist}/>} hidden={index !==0}/>
+          <Dropdown title="Zone Filter" dotteddiv={<Dotteddiv/>}  btntextl="Filter" filtersearch={<Dropdownsearch/>} btntextr="Clear Filter" zonecases={<ZoneCases zonetitle="zone cases" zonelist={zonelist}/>} hidden={index !==0}  datafromchild={datafromchild}/>
           </div>
           <div>
           <Button
@@ -75,7 +80,7 @@ function  Mapbar(){
               setIndex(1);
             }}
           />
-           <Dropdown title="Plu Filter" btntextl="Filter" btntextr="Clear Filter" zonecases={<ZoneCases zonetitle="Filter zone" zonelist={zonelist}/>} hidden={index !==1}/>
+           <Dropdown title="Plu Filter" btntextl="Filter" btntextr="Clear Filter" zonecases={<ZoneCases zonetitle="Filter zone" zonelist={zonelist}/>} hidden={index !==1} datafromchild={datafromchild}/>
           </div>
           <div>
           <Button
@@ -85,7 +90,7 @@ function  Mapbar(){
               setIndex(2);
             }}
           />
-           <Dropdown title="Prospect Filter"  zonecases={<ZoneCases zonetitle="Filter zone" counter={<Counter title="min"/>} counters={<Counter title="max"/>}/>}   parcelsize={<ZoneCases zonetitle="Parcel Size" counter={<Counter title="min"/>} counters={<Counter title="max"/>}/>} btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2}/>
+           <Dropdown title="Prospect Filter"  zonecases={<ZoneCases zonetitle="Filter zone" counter={<Counter title="min"/>} counters={<Counter title="max"/>}/>}   parcelsize={<ZoneCases zonetitle="Parcel Size" counter={<Counter title="min"/>} counters={<Counter title="max"/>}/>} btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2} datafromchild={datafromchild}/>
           </div>
           <div>
           <Button

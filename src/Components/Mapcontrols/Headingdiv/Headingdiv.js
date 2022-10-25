@@ -3,7 +3,7 @@
 function Headingdiv({text}){
     
     return(
-            <div className="bg-purple p-3 rounded text-white">{text}</div>
+            <div className="bg-infodiv p-3 rounded text-white">{text}</div>
     )
 }
 
