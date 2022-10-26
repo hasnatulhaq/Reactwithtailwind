@@ -2,6 +2,7 @@ import { GoogleMap, useJsApiLoader , Marker , Autocomplete} from '@react-google-
 import React, {useState , useEffect } from 'react'
 import './MapsGoogle'
 import axios from 'axios'
+import Autosearch from '../Autosearch/Autosearch';
 
 
 const containerStyle = {
@@ -19,8 +20,6 @@ function MapsGoogle(){
   const [zone, SetZone] = useState([]);
   const [Cityid ,SetCityId] = useState();
   const [data, SetData] = useState([]);
-  //  const lng = -73.983759
-  //  const lat = 40.750183
 
   const center = {
     lat,
@@ -78,14 +77,14 @@ function MapsGoogle(){
 
     return(
         <>
-      <div>
-        {/* <Autocomplete
+  {/* <div>
+        <Autocomplete
       onLoad={(e)=>setAutocomplete(e)}
        onPlaceChanged={onPlaceChanged}
        restrictions={{country: "us"}}>
         <input id='place-id' type='text'/>
-      </Autocomplete> */}
-        </div>
+      </Autocomplete> 
+        </div> */}
           <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
@@ -100,7 +99,8 @@ function MapsGoogle(){
     </GoogleMap>
         </>
     )
-
 }
 
 export default MapsGoogle
+
+
