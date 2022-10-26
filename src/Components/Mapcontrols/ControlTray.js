@@ -39,7 +39,6 @@ export default function ControlTray({ index , datafromchild }) {
           icon={<Print className="h-5 w-5 fill-white" />}
         />}
       />
-    
     </>
   );
 }

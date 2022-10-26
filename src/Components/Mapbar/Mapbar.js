@@ -2,7 +2,6 @@ import { ReactComponent as Bookmark } from "../../bookmark.svg";
 import {ReactComponent as Favourite} from "../../images/favourite-heart.svg"
 import { ReactComponent as Pin } from "../../images/pin-o.svg";
 import { ReactComponent as Filter } from "../../images/filter-button.svg";
-import { Autocomplete } from "@react-google-maps/api";
 import Button from "../Button/Button";
 import Dropdown from "../Dropdown/Dropdown";
 import { useState } from "react";
@@ -10,16 +9,16 @@ import Dropdownsearch from "../Dropdown/Dropdownsearch/Dropdownsearch";
 import Dotteddiv from "../Dropdown/Dotteddiv/Dotteddiv";
 import ZoneCases from "../Dropdown/Zonecases/Zonecases";
 import Counter from "../Counter/Counter";
+import Autosearch from "../Autosearch/Autosearch";
 
 
-function  Mapbar(){
+function  Mapbar({}){
 
     const [index , setIndex] = useState()
     
     const datafromchild =(data)=>{
           setIndex(data)
     }
-
 
     const zonelist = [
       { zonecode: "arts-1"},
@@ -47,18 +46,7 @@ function  Mapbar(){
           </button>
           <span className="border-l-[1px] border-zlightgray"></span>
           <div className="self-center">
-            <Autocomplete
-              // onLoad={(e)=>setAutocomplete(e)}
-              //  onPlaceChanged={onPlaceChanged}
-              restrictions={{ country: "us" }}
-            >
-              <input
-                id="place-id"
-                type="text"
-                placeholder="Search for zoning data"
-                className="focus:outline-none"
-              />
-            </Autocomplete>
+            <Autosearch/>
           </div>
         </div>
         <div className="flex gap-4 lg:flex-row items-end">
