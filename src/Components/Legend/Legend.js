@@ -39,7 +39,6 @@ function Legend(){
 
 
     return(
-        <>
            <div id="legend" className='bg-white w-56 border-[1px] z-[300] h-96 ml-16 mt-[500px] flex flex-col border-zlightgray rounded-[14px] text-center bottom-5 absolute '>
             <div className='flex justify-center items-center border-zblue bg-white border-[2px] w-9 h-9 rounded-full top-[-10px] right-[-10px] absolute'>
                  <Colorpicker className="fill-zblue h-4"/>
@@ -55,7 +54,6 @@ function Legend(){
                </ul>
            </div>
           </div>
-        </>
     )
 }
 
