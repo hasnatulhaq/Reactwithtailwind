@@ -14,7 +14,7 @@ function Dropdown(props){
                 <span>{props?.icon}</span>
                 </div>
                 <span className="cursor-pointer" onClick={()=>{props.datafromchild(data)}}>
-                <Cross className="h-5 w-5"/>
+                <Cross className="h-5 w-5 fill-crosscolor hover:fill-zblue"/>
                 </span>
             </div>
             {props.filtersearch}

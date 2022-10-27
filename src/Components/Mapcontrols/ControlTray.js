@@ -11,7 +11,7 @@ export default function ControlTray({ index , datafromchild }) {
     <>
       <ControlsDropdown
         hidden={index === 0}
-        width="95%"
+        width="90%"
         layer={<Listbox/>}
         datafromchild={datafromchild}
       />
