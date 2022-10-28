@@ -5,14 +5,12 @@ import MapsGoogle from "./Components/Googlemap/MapsGoogle";
 import Navbar from "./Components/Navbar/Navbar";
 import RightSidebar from "./Components/RightSidebar/Rightsidebar";
 import Legend from "./Components/Legend/Legend";
-import Mapbar from "./Components/Mapbar/Mapbar";
 import Mapcontrols from "./Components/Mapcontrols/Mapcontrols";
 
 function App() {
   return (
     <>
       <Navbar/>
-      <Mapbar/>
       <div className="w-full relative">
         <Mapcontrols/>
         <MapsGoogle />

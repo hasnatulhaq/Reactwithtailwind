@@ -16,7 +16,7 @@ function RightSidebar() {
   const btnstyle = { fontSize: "1.0rem" };
   const [index , setIndex] = useState(0);
   return (
-    <div className=" bg-white w-[35rem] h-full z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden">
+    <div className=" bg-white w-[35rem] h-[93%] z-auto absolute right-0 bottom-0 lg:block md:hidden sm:hidden">
       <div className="flex flex-row border-b-[1px] border-zlightgray justify-between items-center px-5 pr-5 h-9">
         <span className="text-purple">
           <Newtab className="fill-purple h-3.5 w-3.5" />
@@ -24,7 +24,7 @@ function RightSidebar() {
         <div className="flex flex-row">
           <Bugreport className="h-5 w-5" />
           <span className="text-gray font-light text-base">
-            <Cross className="h-5 w-5 fill-crosscolor hover:fill-zblue" />
+            <Cross className="h-5 w-5 fill-crosscolor hover:fill-zblue" onClick={()=>{console.log("click on cross sidebar")}} />
           </span>
         </div>
       </div>

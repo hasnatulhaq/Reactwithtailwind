@@ -2,7 +2,7 @@ import { GoogleMap, useJsApiLoader , Marker , Autocomplete} from '@react-google-
 import React, {useState , useEffect } from 'react'
 import './MapsGoogle'
 import axios from 'axios'
-import Autosearch from '../Autosearch/Autosearch';
+import Mapbar from '../Mapbar/Mapbar';
 
 
 const containerStyle = {
@@ -77,18 +77,11 @@ function MapsGoogle(){
 
     return(
         <>
-  {/* <div>
-        <Autocomplete
-      onLoad={(e)=>setAutocomplete(e)}
-       onPlaceChanged={onPlaceChanged}
-       restrictions={{country: "us"}}>
-        <input id='place-id' type='text'/>
-      </Autocomplete> 
-        </div> */}
+          <Mapbar onPlaceChanged={onPlaceChanged} setAutocomplete={setAutocomplete}/>
           <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={10}
+      zoom={4}
       onLoad={onLoad}
       onUnmount={onUnmount}
     > 
@@ -102,5 +95,20 @@ function MapsGoogle(){
 }
 
 export default MapsGoogle
+
+
+
+
+
+
+
+ {/* <div>
+        <Autocomplete
+      onLoad={(e)=>setAutocomplete(e)}
+       onPlaceChanged={onPlaceChanged}
+       restrictions={{country: "us"}}>
+        <input id='place-id' type='text'/>
+      </Autocomplete> 
+        </div> */}
 
 

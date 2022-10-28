@@ -2,11 +2,11 @@ import { Autocomplete } from "@react-google-maps/api";
 
 
 
-function Autosearch(){
+function Autosearch({onPlaceChanged , setAutocomplete}){
     return(
             <Autocomplete
-            // onLoad={(e)=>setAutocomplete(e)}
-            // onPlaceChanged={onPlaceChanged}
+            onLoad={(e)=>setAutocomplete(e)}
+            onPlaceChanged={onPlaceChanged}
               restrictions={{ country: "us" }}
               className="bg-purple"
             >

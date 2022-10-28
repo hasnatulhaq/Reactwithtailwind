@@ -12,7 +12,7 @@ import Counter from "../Counter/Counter";
 import Autosearch from "../Autosearch/Autosearch";
 
 
-function  Mapbar({}){
+function  Mapbar({onPlaceChanged, setAutocomplete}){
 
     const [index , setIndex] = useState()
     
@@ -46,7 +46,7 @@ function  Mapbar({}){
           </button>
           <span className="border-l-[1px] border-zlightgray"></span>
           <div className="self-center">
-            <Autosearch/>
+            <Autosearch onPlaceChanged={onPlaceChanged} setAutocomplete={setAutocomplete}/>
           </div>
         </div>
         <div className="flex gap-4 lg:flex-row items-end">
