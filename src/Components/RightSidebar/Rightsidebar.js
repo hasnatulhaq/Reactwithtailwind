@@ -24,7 +24,7 @@ function RightSidebar() {
         <div className="flex flex-row">
           <Bugreport className="h-5 w-5" />
           <span className="text-gray font-light text-base">
-            <Cross className="h-5 w-5" />
+            <Cross className="h-5 w-5 fill-crosscolor hover:fill-zblue" />
           </span>
         </div>
       </div>
