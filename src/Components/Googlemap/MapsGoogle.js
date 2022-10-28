@@ -81,7 +81,7 @@ function MapsGoogle(){
           <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={4}
+      zoom={17}
       onLoad={onLoad}
       onUnmount={onUnmount}
     > 
