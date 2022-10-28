@@ -1,8 +1,10 @@
-import { GoogleMap, useJsApiLoader , Marker , Autocomplete} from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader , Marker} from '@react-google-maps/api';
 import React, {useState , useEffect } from 'react'
 import './MapsGoogle'
 import axios from 'axios'
 import Mapbar from '../Mapbar/Mapbar';
+import { MVTLayer} from "deck.gl";
+import { GoogleMapsOverlay } from "@deck.gl/google-maps";
 
 
 const containerStyle = {
@@ -48,6 +50,43 @@ function MapsGoogle(){
     }
     getData()
 },[lat,lng]);
+
+
+let zones = [];
+const getZoneBasedColor = (zone_code) => {
+  const randomBetween = (min = 0, max = 255) =>
+    min + Math.floor(Math.random() * (max - min + 1));
+  const r = randomBetween();
+  const g = randomBetween();
+  const b = randomBetween();
+  const index = zones.find((zone) => zone.code === zone_code);
+  if (index) {
+    return index.color;
+  } else {
+    const color = [r, g, b, 255];
+    zones.push({ code: zone_code, color: color });
+    return color;
+  }
+};
+
+const deckOverlay = new GoogleMapsOverlay({
+  layers: [
+    new MVTLayer({
+      id : "mvtlayer",
+      data: `https://testing-api.zoneomics.com/tiles/zones?x={x}&y={y}&z={z}&city_id=${Cityid}`,
+      minZoom: 10,
+      maxZoom: 23,
+      getLineColor: [19, 18 , 192],
+      getFillColor: (f, g) => {
+        return getZoneBasedColor(f.properties.z);
+      },
+      getLineWidth: 1,
+      opacity: 0.2,
+    }),
+  ]
+}); 
+console.log(deckOverlay , " mvt and text layer")
+deckOverlay.setMap(map)
 
 
     const onRendered = marker => {
