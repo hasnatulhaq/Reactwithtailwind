@@ -26,25 +26,25 @@ function Mapcontrols() {
       </div>
       <div className="w-full flex flex-row gap-[1px] h-[35px] justify-center items-center bg-zlightgray rounded-md text-white">
         <Iconbutton
-          icon={<Layer className="fill-white" />}
+          icon={<Layer className="fill-white hover:fill-infodivtext" />}
           onClick={() => {
             setIndex(0);
           }}
         />
         <Iconbutton
-          icon={<Opacity className="fill-white" />}
+          icon={<Opacity className="fill-white hover:fill-infodivtext" />}
           onClick={() => {
             setIndex(1);
           }}
         />
         <Iconbutton
-          icon={<Screenshot className="fill-white" />}
+          icon={<Screenshot className="fill-white hover:fill-infodivtext" />}
           onClick={() => {
             setIndex(2);
           }}
         />
         <Iconbutton
-          icon={<Print className="fill-white" />}
+          icon={<Print className="fill-white hover:fill-infodivtext" />}
           onClick={() => {
             setIndex(3);
           }}

@@ -70,7 +70,6 @@ const getZoneBasedColor = (zone_code) => {
 };
  
 
-
 const deckOverlay = new GoogleMapsOverlay({
   layers: [
     new MVTLayer({
@@ -88,10 +87,8 @@ const deckOverlay = new GoogleMapsOverlay({
 
      new TextLayer({
         id: 'text-layer',
-        data,
-        pickable: true,
-        getPosition: d => d.position,
-        getText: d => d.zone,
+        data : data,
+        getText: d => data.zone,
         getSize: 16,
         getAngle: 0,
         getTextAnchor: 'middle',

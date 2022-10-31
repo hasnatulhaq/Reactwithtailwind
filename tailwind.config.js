@@ -65,7 +65,8 @@ module.exports = {
       "infodiv" : "rgb(108 157 243/.2)",
       "traybutton": "rgb(100 149 237)/0.8",
       "opacitybd" : "hsla(0,0%,55%,.25)",
-      "crosscolor" : "#e6e6e7"
+      "crosscolor" : "#e6e6e7",
+      "infodivtext" : "#84acf5"
     },
   },
   plugins: [],

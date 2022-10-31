@@ -16,13 +16,13 @@ export default function ControlTray({ index , datafromchild }) {
         datafromchild={datafromchild}
       />
       <ControlsDropdown
-        headingdiv={<Headingdiv text="opacity" />}
+        headingdiv={<Headingdiv text="Use the range below to control the opacity of zone colors" />}
         Slider={<Slider/>} 
         hidden={index === 1}
         datafromchild={datafromchild}
       />
       <ControlsDropdown
-        headingdiv={<Headingdiv text="Screenshot" />}
+        headingdiv={<Headingdiv text="Take a screenshot of the Zoning Map." />}
         hidden={index === 2}
         datafromchild={datafromchild}
         button={<Rightbarbtn
