@@ -12,7 +12,7 @@ import Counter from "../Counter/Counter";
 import Autosearch from "../Autosearch/Autosearch";
 
 
-function  Mapbar({onPlaceChanged, setAutocomplete}){
+function  Mapbar({onPlaceChanged, setAutocomplete , zone}){
 
     const [index , setIndex] = useState()
     
@@ -40,6 +40,7 @@ function  Mapbar({onPlaceChanged, setAutocomplete}){
 
     return(
       <div className="w-full lg:h-full bg-white p-3 flex gap-5 lg:flex-row md:flex-col sm:flex-col sm:h-24 relative">
+      
         <div className="border-[1px] border-zlightgray lg:w-2/6 h-11 ml-5 rounded-lg p-2 flex flex-row gap-3 shadow-sm px-6 md:w-full">
           <button className="px-2">
             <Bookmark className="fill-zlightgray h-6 w-6 mx-auto my-auto" />

@@ -3,8 +3,9 @@ import React, {useState , useEffect } from 'react'
 import './MapsGoogle'
 import axios from 'axios'
 import Mapbar from '../Mapbar/Mapbar';
-import { MVTLayer} from "deck.gl";
+import { MVTLayer , TextLayer} from "deck.gl";
 import { GoogleMapsOverlay } from "@deck.gl/google-maps";
+import Legend from '../Legend/Legend';
 
 
 const containerStyle = {
@@ -32,9 +33,7 @@ function MapsGoogle(){
        lat : lat,
        lng : lng,
   }
-
   console.log(map);
-
   useEffect(()=>{
     async function getData(){
       try{
@@ -50,6 +49,7 @@ function MapsGoogle(){
     }
     getData()
 },[lat,lng]);
+
 
 
 let zones = [];
@@ -68,6 +68,8 @@ const getZoneBasedColor = (zone_code) => {
     return color;
   }
 };
+ 
+
 
 const deckOverlay = new GoogleMapsOverlay({
   layers: [
@@ -83,9 +85,21 @@ const deckOverlay = new GoogleMapsOverlay({
       getLineWidth: 1,
       opacity: 0.2,
     }),
+
+     new TextLayer({
+        id: 'text-layer',
+        data,
+        pickable: true,
+        getPosition: d => d.position,
+        getText: d => d.zone,
+        getSize: 16,
+        getAngle: 0,
+        getTextAnchor: 'middle',
+        getAlignmentBaseline: 'center'
+      })
   ]
 }); 
-console.log(deckOverlay , " mvt and text layer")
+
 deckOverlay.setMap(map)
 
 
@@ -116,7 +130,8 @@ deckOverlay.setMap(map)
 
     return(
         <>
-          <Mapbar onPlaceChanged={onPlaceChanged} setAutocomplete={setAutocomplete}/>
+          <Mapbar onPlaceChanged={onPlaceChanged} setAutocomplete={setAutocomplete} zone={zone}/>
+          <Legend zone={zone} getZoneBasedColor={getZoneBasedColor}/>
           <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}

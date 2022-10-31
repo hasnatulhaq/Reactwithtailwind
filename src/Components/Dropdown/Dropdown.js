@@ -7,7 +7,7 @@ function Dropdown(props){
     return(
          <div id="dropdown" className="bg-white border-[1px] w-96 h-[400px] absolute z-30 mt-3 rounded-lg border-zlightgray p-3 grow" hidden={props?.hidden}>
             <div className="h-full w-full relative">
-            <div className="w-3 h-3 border-t-[1px] border-l-[1px] bg-white rotate-45 border-zlightgray relative top-[-19px] ml-[100px]"></div>
+            <div className="w-3 h-3 border-t-[2px] border-l-[2px] bg-white rotate-45 border-zlightgray relative top-[-19px] ml-[100px]"></div>
             <div className="w-full pt-0 flex flex-row justify-between items-center text-lg">
                 <div className="flex flex-row  items-center">
                 <h1 className="uppercase text-zdrophed text-base font-semibold">{props.title}</h1>

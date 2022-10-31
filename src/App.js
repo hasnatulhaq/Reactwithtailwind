@@ -4,7 +4,6 @@ import "../src/global.css";
 import MapsGoogle from "./Components/Googlemap/MapsGoogle";
 import Navbar from "./Components/Navbar/Navbar";
 import RightSidebar from "./Components/RightSidebar/Rightsidebar";
-import Legend from "./Components/Legend/Legend";
 import Mapcontrols from "./Components/Mapcontrols/Mapcontrols";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
       <div className="w-full relative">
         <Mapcontrols/>
         <MapsGoogle />
-        <Legend />
         <RightSidebar/>
       </div>
     </>
