@@ -59,7 +59,7 @@ function  Mapbar({onPlaceChanged, setAutocomplete , zone}){
               setIndex(0);
             }}
           />
-          <Dropdown title="Zone Filter" dotteddiv={<Dotteddiv/>}  btntextl="Filter" filtersearch={<Dropdownsearch/>} btntextr="Clear Filter" zonecases={<ZoneCases zonetitle="zone cases" zonelist={zonelist}/>} hidden={index !==0}  datafromchild={datafromchild}/>
+          <Dropdown title="Zone Filter" dotteddiv={<Dotteddiv/>}  btntextl="Filter" filtersearch={<Dropdownsearch placeholder="Search for zone cases..."/>} btntextr="Clear Filter" zonecases={<ZoneCases zonetitle="zone cases" zonelist={zonelist}/>} hidden={index !==0}  datafromchild={datafromchild}/>
           </div>
           <div>
           <Button
@@ -69,7 +69,7 @@ function  Mapbar({onPlaceChanged, setAutocomplete , zone}){
               setIndex(1);
             }}
           />
-           <Dropdown title="Plu Filter" btntextl="Filter" btntextr="Clear Filter" zonecases={<ZoneCases zonetitle="Filter zone" zonelist={zonelist}/>} hidden={index !==1} datafromchild={datafromchild}/>
+           <Dropdown title="Plu Filter" btntextl="Filter" btntextr="Clear Filter" filtersearch={<Dropdownsearch placeholder="Search for permitted land use"/>} zonecases={<ZoneCases zonetitle="Plu data" zonelist={zonelist}/>} hidden={index !==1} datafromchild={datafromchild}/>
           </div>
           <div>
           <Button
