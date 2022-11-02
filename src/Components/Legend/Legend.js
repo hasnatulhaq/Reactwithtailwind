@@ -2,7 +2,7 @@
 import {ReactComponent as Colorpicker} from '../../images/colorpicker-s.svg';
 
 
-function Legend({zone , getZoneBasedColor}){
+function Legend({zone, color}){
       
     return(
            <div id="legend" className='bg-white w-56 border-[1px] z-[300] h-96 ml-16 mt-[500px] flex flex-col border-zlightgray rounded-[14px] text-center bottom-5 absolute '>
@@ -15,7 +15,7 @@ function Legend({zone , getZoneBasedColor}){
            <div className='text-left font-normal overflow-auto'>
                <ul className='p-3'>
                     {zone.map((data)=>(
-                         <li className='flex gap-2 items-center truncate ...'><div className={`w-3 rounded-full h-3 ${getZoneBasedColor}`}></div><h3>{data}</h3></li>
+                         <li className='flex gap-2 items-center truncate ...'><div className={`w-3 rounded-full h-3 ${color}`}></div><h3>{data}</h3></li>
                     ))}
                </ul>
            </div>

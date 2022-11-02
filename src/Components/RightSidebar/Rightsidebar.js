@@ -140,17 +140,17 @@ function RightSidebar() {
         <Rightbarbtn
           text={"Get Report"}
           icon={<FaFileAlt style={btnstyle} />} 
-          bgcolor={"zlblue"}
+          bgcolor={"bg-zlblue"}
         />
         <Rightbarbtn 
           text={"Order Report"} 
           icon={<FaUndo style={btnstyle} />} 
-          bgcolor={"zlblue"}
+          bgcolor={"bg-zlblue"}
           />
         <Rightbarbtn
           text={"CSV Download"}
           icon={<FaDownload style={btnstyle} />}
-          bgcolor={"zlblue"}
+          bgcolor={"bg-zlblue"}
         />
       </div>
     </div>

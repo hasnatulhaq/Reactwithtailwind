@@ -7,11 +7,18 @@ function ControlsDropdown(props) {
  
   return (
     <div
+       
       className={classNames(
-        "bg-zmapmenu h-auto w-[90%] ml-16 mt-11 rounded-md flex flex-col p-2 gap-2 absolute",
+        `bg-zmapmenu h-auto   ml-16 mt-11 rounded-md flex flex-col p-2 gap-2 absolute`,
         {
           "!hidden": !props.hidden,
-        }
+        },
+          {
+          "w-[80%]": props.flag,
+        },
+        // {
+        // //   'w-[70%]': props.w70,
+        // // }
       )}
     >
       <div className="flex justify-end cursor-pointer" onClick={()=>{props.datafromchild(data)}}>
@@ -21,6 +28,7 @@ function ControlsDropdown(props) {
       {props.headingdiv}
       {props.Slider}
       {props.button}
+
    
     </div>
   );

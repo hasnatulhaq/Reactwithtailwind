@@ -59,7 +59,7 @@ function  Mapbar({onPlaceChanged, setAutocomplete , zone}){
               setIndex(0);
             }}
           />
-          <Dropdown title="Zone Filter" dotteddiv={<Dotteddiv/>}  btntextl="Filter" filtersearch={<Dropdownsearch placeholder="Search for zone cases..."/>} btntextr="Clear Filter" zonecases={<ZoneCases zonetitle="zone cases" zonelist={zonelist}/>} hidden={index !==0}  datafromchild={datafromchild}/>
+          <Dropdown title="Zone Filter" dotteddiv={<Dotteddiv/>}  btntextl="Filter" filtersearch={<Dropdownsearch placeholder="Search for zone cases..."/>} btntextr="Clear Filter" zonecases={<ZoneCases height={"h-4/5"} case={"lowercase"} zonetitle="zone cases" zonelist={zonelist}/>} hidden={index !==0}  datafromchild={datafromchild}/>
           </div>
           <div>
           <Button
@@ -69,7 +69,7 @@ function  Mapbar({onPlaceChanged, setAutocomplete , zone}){
               setIndex(1);
             }}
           />
-           <Dropdown title="Plu Filter" btntextl="Filter" btntextr="Clear Filter" filtersearch={<Dropdownsearch placeholder="Search for permitted land use"/>} zonecases={<ZoneCases zonetitle="Plu data" zonelist={zonelist}/>} hidden={index !==1} datafromchild={datafromchild}/>
+           <Dropdown title="Plu Filter" btntextl="Filter" btntextr="Clear Filter" filtersearch={<Dropdownsearch placeholder="Search for permitted land use"/>} zonecases={<ZoneCases case={"uppercase"} zonetitle="Plu data" zonelist={zonelist}/>} hidden={index !==1} datafromchild={datafromchild}/>
           </div>
           <div>
           <Button
@@ -79,7 +79,7 @@ function  Mapbar({onPlaceChanged, setAutocomplete , zone}){
               setIndex(2);
             }}
           />
-           <Dropdown title="Prospect Filter" filterzone={<ZoneCases zonetitle="Filter zone"/>}  zonecases={<ZoneCases zonetitle="Parcel size" counter={<Counter title="min"/>} counters={<Counter title="max"/>}/>}   parcelsize={<ZoneCases zonetitle="Parcel Size" counter={<Counter title="min"/>} counters={<Counter title="max"/>}/>} btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2} datafromchild={datafromchild}/>
+           <Dropdown title="Prospect Filter" filterzone={<ZoneCases height={"h-90%"} zonetitle="Filter zone"/>}  zonecases={<ZoneCases zonetitle="Parcel size" counter={<Counter title="min"/>} counters={<Counter title="max"/>}/>}   parcelsize={<ZoneCases zonetitle="Parcel Size" counter={<Counter title="min"/>} counters={<Counter title="max"/>}/>} btntextl="Filter" icon={<Favourite className="w-10 h-10 fill-zlightgray"/>} btntextr="Clear Filter" zonelist={zonelist} hidden={index !==2} datafromchild={datafromchild}/>
           </div>
           <div>
           <Button

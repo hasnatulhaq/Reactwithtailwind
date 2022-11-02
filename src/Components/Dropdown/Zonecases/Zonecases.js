@@ -1,11 +1,14 @@
 
+
+// h-4/5
+
 function ZoneCases(props){
     return(
         <>
-           <div className="lowercase">
+           <div className={`${props.case}`}>
            {props.zonetitle}
             </div> 
-                <div className="h-4/5 border-t-[1px] border-b-[1px] p-5 border-zlightgray overflow-auto">
+                <div className={`${props.height} border-t-[1px] border-b-[1px] p-5 border-zlightgray overflow-auto`}>
                  <div className="flex flex-col gap-5">
                  <div className="flex flex-row gap-1">
                     <div className="w-1/2">

@@ -52,7 +52,8 @@ function MapsGoogle(){
 
 
 
-let zones = [];
+// let zones = [];
+const [zones,setZones]= useState([])
 const getZoneBasedColor = (zone_code) => {
   const randomBetween = (min = 0, max = 255) =>
     min + Math.floor(Math.random() * (max - min + 1));
@@ -64,17 +65,26 @@ const getZoneBasedColor = (zone_code) => {
     return index.color;
   } else {
     const color = [r, g, b, 255];
-    zones.push({ code: zone_code, color: color });
+  
+    // setZones(zones => [...zones, { code: zone_code, color: color }])
+    
+   zones.push({ code: zone_code, color: color });
     return color;
   }
 };
 
+setTimeout(()=>{
+    
+},2000)
+// useEffect(()=>{
+//   console.log(zones)
+// },[zones])
+// console.log(zones , "zone for color")
 
-const color ={
-       
-}
+
+
+console.log(zones)
  
-
 
 const deckOverlay = new GoogleMapsOverlay({
   layers: [
@@ -134,7 +144,7 @@ deckOverlay.setMap(map)
     return(
         <>
           <Mapbar onPlaceChanged={onPlaceChanged} setAutocomplete={setAutocomplete} zone={zone}/>
-          <Legend zone={zone} getZoneBasedColor={getZoneBasedColor}/>
+          <Legend zone={zone} color={"bg-zlightgray"}/>
           <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
@@ -153,19 +163,5 @@ deckOverlay.setMap(map)
 
 export default MapsGoogle
 
-
-
-
-
-
-
- {/* <div>
-        <Autocomplete
-      onLoad={(e)=>setAutocomplete(e)}
-       onPlaceChanged={onPlaceChanged}
-       restrictions={{country: "us"}}>
-        <input id='place-id' type='text'/>
-      </Autocomplete> 
-        </div> */}
 
 
