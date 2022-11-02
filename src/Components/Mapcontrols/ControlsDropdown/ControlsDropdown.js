@@ -21,6 +21,7 @@ function ControlsDropdown(props) {
       {props.headingdiv}
       {props.Slider}
       {props.button}
+   
     </div>
   );
 }

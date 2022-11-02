@@ -28,6 +28,7 @@ export default function ControlTray({ index , datafromchild }) {
         button={<Rightbarbtn
           text="Screenshot"         
           icon={<Screenshot className="h-4 w-5 fill-white" />}
+          bgcolor={"traybutton"}
         />}
       />
       <ControlsDropdown
@@ -37,6 +38,7 @@ export default function ControlTray({ index , datafromchild }) {
         button={<Rightbarbtn
           text="Print"
           icon={<Print className="h-5 w-5 fill-white" />}
+          bgcolor={"traybutton"}
         />}
       />
     </>

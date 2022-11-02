@@ -68,7 +68,13 @@ const getZoneBasedColor = (zone_code) => {
     return color;
   }
 };
+
+
+const color ={
+       
+}
  
+
 
 const deckOverlay = new GoogleMapsOverlay({
   layers: [

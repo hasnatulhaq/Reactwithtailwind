@@ -15,7 +15,7 @@ function Legend({zone , getZoneBasedColor}){
            <div className='text-left font-normal overflow-auto'>
                <ul className='p-3'>
                     {zone.map((data)=>(
-                         <li className='flex gap-2 items-center truncate ...'><div className='w-3 rounded-full h-3 bg-purple'></div><h3>{data}</h3></li>
+                         <li className='flex gap-2 items-center truncate ...'><div className={`w-3 rounded-full h-3 ${getZoneBasedColor}`}></div><h3>{data}</h3></li>
                     ))}
                </ul>
            </div>

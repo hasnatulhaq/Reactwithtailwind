@@ -139,15 +139,18 @@ function RightSidebar() {
       <div className="flex p-4 gap-1 bottom-0 absolute w-full border-t-[1px] border-zlightgray bg-white">
         <Rightbarbtn
           text={"Get Report"}
-          icon={<FaFileAlt style={btnstyle} />}
+          icon={<FaFileAlt style={btnstyle} />} 
+          bgcolor={"zlblue"}
         />
         <Rightbarbtn 
           text={"Order Report"} 
           icon={<FaUndo style={btnstyle} />} 
+          bgcolor={"zlblue"}
           />
         <Rightbarbtn
           text={"CSV Download"}
           icon={<FaDownload style={btnstyle} />}
+          bgcolor={"zlblue"}
         />
       </div>
     </div>

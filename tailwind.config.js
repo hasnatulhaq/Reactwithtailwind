@@ -63,7 +63,7 @@ module.exports = {
       "zzonecase" : "rgba(58, 57, 57, 0.8)",
       "zdropsearch": "rgba(74, 72, 72, 0.8)",
       "infodiv" : "rgb(108 157 243/.2)",
-      "traybutton": "rgb(100 149 237)/0.8",
+      "traybutton": "#6495ED",
       "opacitybd" : "hsla(0,0%,55%,.25)",
       "crosscolor" : "#e6e6e7",
       "infodivtext" : "#84acf5"
