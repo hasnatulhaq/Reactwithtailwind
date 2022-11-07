@@ -140,10 +140,10 @@ deckOverlay.setMap(map)
       }
     
       const onLoad = React.useCallback(function callback(map) {
-        const bounds = new window.google.maps.LatLngBounds(lat , lng);
+        const bounds = new window.google.maps.LatLngBounds(center);
         map.fitBounds(bounds);
         setMap(map)
-      }, [lat , lng])
+      }, [center])
     
       const onUnmount = React.useCallback(function callback(map) {
         setMap(null)
