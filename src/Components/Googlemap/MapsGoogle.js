@@ -1,5 +1,5 @@
 import { GoogleMap, useJsApiLoader , Marker} from '@react-google-maps/api';
-import React, {useState , useEffect } from 'react'
+import React, {useState , useEffect} from 'react'
 import './MapsGoogle'
 import axios from 'axios'
 import Mapbar from '../Mapbar/Mapbar';
@@ -24,15 +24,25 @@ function MapsGoogle(){
   const [Cityid ,SetCityId] = useState();
   const [data, SetData] = useState([]);
 
-  const center = {
-    lat,
-    lng,
-  };
+
+
+
+const center ={
+      lat, 
+      lng,
+}
+
+
+// useMemo(()=>{
+     
+// })
+
 
   const position={
        lat : lat,
        lng : lng,
   }
+  console.log(zone)
   console.log(map);
   useEffect(()=>{
     async function getData(){
@@ -80,8 +90,6 @@ setTimeout(()=>{
 //   console.log(zones)
 // },[zones])
 // console.log(zones , "zone for color")
-
-
 
 console.log(zones)
  
@@ -132,10 +140,10 @@ deckOverlay.setMap(map)
       }
     
       const onLoad = React.useCallback(function callback(map) {
-        const bounds = new window.google.maps.LatLngBounds(center);
+        const bounds = new window.google.maps.LatLngBounds(lat , lng);
         map.fitBounds(bounds);
         setMap(map)
-      }, [center])
+      }, [lat , lng])
     
       const onUnmount = React.useCallback(function callback(map) {
         setMap(null)
